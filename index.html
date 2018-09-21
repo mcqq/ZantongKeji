@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>团队项目</title>
+    <link rel="stylesheet" href="css/indexs.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="one">
+        <nav>
+            <div class="navs">
+                <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
+                <ul class="list_nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">产品</a></li>
+                    <li><a href="#">服务支持</a></li>
+                    <li><a href="#">赞同资讯</a></li>
+                    <li><a href="#">人才招聘</a></li>
+                    <li><a href="#">关于赞同</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="lunbo">
+            <div class="swiper-container">
+                <!--包含子元素的滑块的容器-->
+                <div class="swiper-wrapper">
+                    <!--子元素滑块-->
+                    <div class="swiper-slide">
+                        <img src="image/qrj_1 (1).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/qrj_1 (2).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/qrj_1 (3).jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/qrj_1 (4).jpg" alt="">
+                    </div>
+                </div>
+                <!--添加分页器-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="hovers">
+            <ul>
+                <li>
+                    <span class="back"></span>
+                    <p>咨询服务</p>
+                </li>
+                <li>
+                    <span class="back"></span>
+                    <p>咨询服务</p>
+                </li>
+                <li>
+                    <span class="back"></span>
+                    <p>咨询服务</p>
+                </li>
+                <li>
+                    <span class="back"></span>
+                    <p>咨询服务</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!-- 脚部开始 -->
+<footer class="footer">
+    <div class="smallWidth">
+        <div class="foot">
+            <dl>
+                <dd>
+                    <div><img src='image/hhx_code.jpg' /></div>
+                    <p>扫一扫，关注赞同公众号</p>
+                </dd>
+                <dd class="liebiao">
+                    <h1><span>关于我们</span></h1>
+                    <p><a href='#'>联系我们</a></p>
+                    <p><a href='#'>赞同新闻</a></p>
+                    <p><a href='#'>企业招聘</a></p>
+                </dd>
+                <dd class="liebiao">
+                    <h1><span>精选栏目</span></h1>
+                    <p><a href='#'>咨询设计</a></p>
+                    <p><a href='#'>技术平台</a></p>
+                    <p><a href='#'>解决方案</a></p>
+                    <p><a href='#'>客户反馈</a></p>
+                    <p><a href='#'>视频中心</a></p>
+                </dd>
+            </dl>
+        </div>
+        <div class="neironga">
+            <ul class="uls">
+                <div>联系我们</div>
+                <li>咨询热线：010-64731133</li>
+                <li><a href='#'>在线客服</a></li>
+                <li>邮箱：shichangbu@agree.com.cn</li>
+            </ul>
+        </div>
+        <br>
+        <div class="banquan">版权所有：赞同科技股份有限公司<span> <a href="#">备案号：京ICP备14027589号-1</a></span></div>
+    </div>
+
+</footer>
+<!-- 脚部结束 -->
+
+<script src="js/swiper.js"></script>
+<script src="js/qiao.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    autoplay:false, // 是否开始自动播放
+    // direction:"vertical", //滚滚屏效果
+    pagination: {
+    el: '.swiper-pagination',
+    // type: 'fraction',
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    lazy: {
+    loadPrevNext: true,
+    }
+});
+</script>
+</body>
+</html>

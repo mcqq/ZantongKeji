@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font-family: "SimHei";
+}
+.banner {
+  background: url(../image/zyx_bigImg.jpg) no-repeat center top;
+  background-size: cover;
+}
+main {
+  width: 100%;
+}
+main .main_box {
+  width: 80%;
+  margin: 0 auto;
+}
+main .main_box .head {
+  padding: 87px 0 54px 0;
+  font-size: 16px;
+}
+main .main_box .head p {
+  line-height: 38px;
+  border-bottom: 1px solid #9fa0a0;
+  box-shadow: 0 1px 0 #e7e8e8;
+}
+main .main_box .head p span {
+  color: #8fc31f;
+}
+main .main_box > h1 {
+  color: #000;
+  padding-bottom: 126px;
+  font-size: 47px;
+  font-weight: 500;
+}
+main .main_box .main_list {
+  margin-bottom: 2%;
+}
+main .main_box .main_list li {
+  font-size: 18px;
+  padding-left: 0;
+  position: relative;
+  padding-bottom: 46px;
+  min-height: 320px;
+  overflow: hidden;
+}
+main .main_box .main_list li .time {
+  float: left;
+  width: 120px;
+  height: 120px;
+  font-size: 18px;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 30px;
+  border-radius: 50%;
+  background-color: #8fc31f;
+  text-align: center;
+}
+main .main_box .main_list li .time p {
+  font-size: 24px;
+}
+main .main_box .main_list li .cont {
+  width: 80%;
+  float: right;
+}
+main .main_box .main_list li .cont h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+main .main_box .main_list li .cont h1 a:hover {
+  color: #9bc939;
+}
+main .main_box .main_list li .cont .share {
+  border-bottom: 1px solid #9fa0a0;
+  box-shadow: 0 1px 0 #e7e8e8;
+  padding: 20px 0;
+  color: #444;
+}
+main .main_box .main_list li .cont .share a {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+  width: 31px;
+  height: 30px;
+  background: url(../image/zyx_share.png) no-repeat;
+}
+main .main_box .main_list li .cont .share .xl {
+  background-position: 0 0;
+}
+main .main_box .main_list li .cont .share .tx {
+  background-position: -47px 0;
+}
+main .main_box .main_list li .cont .share .qq {
+  background-position: -93px 0;
+}
+main .main_box .main_list li .cont p {
+  color: #727171;
+  padding: 20px 0;
+}
+main .main_box .main_list li .cont a.more {
+  color: #727171;
+}
+main .main_box .main_list li .cont a.more:hover {
+  color: #9bc939;
+}
+main .main_box .main_list .moreTotal {
+  text-align: center;
+  padding: 48px 57px;
+}
+main .main_box .main_list .moreTotal a {
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  background-color: #7fae1c;
+  font-size: 30px;
+}
+footer {
+  background-color: #404040;
+  padding: 10% 0 3%;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+}
+footer .foot_box {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .foot_box .foot_top {
+  position: relative;
+  overflow: hidden;
+}
+footer .foot_box .foot_top dd {
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+footer .foot_box .foot_top dd:hover h1 {
+  background-color: #00a6b1;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+footer .foot_box .foot_top dd h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #00a6b1;
+  border: 1px solid #00a6b1;
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  margin: 0 auto;
+  line-height: 118px;
+  position: relative;
+}
+footer .foot_box .foot_top dd ul li {
+  line-height: 32px;
+}
+footer .foot_box .foot_top dd ul li a {
+  color: #fff;
+}
+footer .foot_box .foot_top dd ul li a:hover {
+  color: #139ca6;
+}
+footer .foot_box .foot_top dd ul li:nth-child(1) {
+  padding-top: 22px;
+}
+footer .foot_box .foot_top dd:nth-child(1) {
+  width: 36%;
+  padding-top: -40px;
+}
+footer .foot_box .foot_top dd:nth-child(1) div {
+  border: 13px solid #139ca6;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 5%;
+}
+footer .foot_box .foot_top dd:nth-child(1) div img {
+  width: 100%;
+}
+footer .foot_box .foot_top dd:nth-child(1) p {
+  line-height: 32px;
+  padding-top: 13px ;
+}
+footer .foot_box .foot_cen {
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  padding-left: 115px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer .foot_box .foot_cen ul li {
+  float: left;
+  padding: 10px 2%;
+  position: relative;
+}
+footer .foot_box .foot_cen ul li a {
+  color: #fff;
+}
+footer .foot_box .foot_cen ul li a:hover {
+  color: #139ca6;
+}
+footer .foot_box .foot_cen li:nth-child(1) {
+  border: 1px solid #139ca6;
+  color: #139ca6;
+  padding: 10px 35px !important;
+  border-radius: 30px;
+}
+footer .foot_box .foot_cen li.lis:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 50%;
+  background-color: #139ca6;
+  right: 0;
+  top: 25%;
+}
+footer .foot_box .foot_bot {
+  text-align: center;
+  color: #139ca6;
+}
+footer .foot_box .foot_bot a {
+  margin-left: 20px;
+  color: #fff;
+}
+footer .foot_box .foot_bot a:hover {
+  color: #139ca6;
+}
+.aside {
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  z-index: 100;
+}
+.aside li {
+  height: 50px;
+  position: relative;
+  margin-bottom: 1px;
+}
+.aside li b {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: #404040;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.aside li .dh {
+  background-image: url(../image/zyx_tel.png);
+}
+.aside li .qq {
+  background-image: url(../image/zyx_qq.png);
+}
+.aside li .back {
+  background-image: url(../image/zyx_gettop.png);
+}
+.aside li p {
+  position: absolute;
+  background-color: #404040;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  line-height: 50px;
+  font-size: 18px;
+}
+.aside li p a {
+  color: #fff;
+}
+.aside li:nth-child(1):hover p {
+  right: 50px;
+  opacity: 1;
+  transition: all ease 0.2s;
+}
+.aside li:nth-child(1) p {
+  width: 144px;
+  right: -144px;
+}
+.aside li:nth-child(2):hover p,
+.aside li:nth-child(3):hover p {
+  right: 50px;
+  opacity: 1;
+  transition: all ease 0.2s;
+}
+.aside li:nth-child(2) p,
+.aside li:nth-child(3) p {
+  width: 94px;
+  right: -94px;
+}
+/*# sourceMappingURL=ztzx.css.map */

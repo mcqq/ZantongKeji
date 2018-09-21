@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.one {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* nav部分 */
+nav {
+  font-size: 18px;
+  z-index: 200;
+  width: 100%;
+  max-height: 64px;
+  height: 60px;
+  position: absolute;
+}
+nav .navs {
+  width: 90%;
+  height: 100%;
+  line-height: 60px;
+  margin: 0 auto;
+}
+nav .navs .logo {
+  width: 15%;
+  float: left;
+  margin-top: -10px;
+}
+nav .navs .logo img {
+  width: 90%;
+}
+nav .list_nav {
+  float: right;
+  width: 80%;
+  height: 100%;
+  margin-left: 30px;
+}
+nav .list_nav li {
+  list-style: none;
+  float: left;
+  height: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  margin-left: 5px;
+  font-weight: 700;
+}
+nav .list_nav li a {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+nav .list_nav li ::before {
+  content: '';
+  position: absolute;
+  right: 0px;
+  width: 1px;
+  height: 22px;
+  background-color: #fff;
+  top: 19px;
+}
+@media (max-width: 800px) {
+  nav {
+    font-size: 18px;
+    z-index: 200;
+    width: 100%;
+    max-height: 64px;
+    height: 50px;
+  }
+  nav .navs {
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    margin: 0 auto;
+  }
+  nav .navs span {
+    font-size: 11px;
+  }
+  nav .navs .logo {
+    width: 15%;
+    height: 40px;
+    float: left;
+    margin-top: -5px;
+  }
+  nav .navs .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  nav .list_nav {
+    float: right;
+    width: 75%;
+    height: 100%;
+  }
+  nav .list_nav li {
+    list-style: none;
+    float: left;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+  }
+  nav .list_nav li a {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+  }
+  nav .list_nav li ::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    width: 1px;
+    height: 22px;
+    background-color: #fff;
+    top: 19px;
+  }
+}
+.lunbo {
+  width: 100%;
+  height: 80%;
+  max-height: 600px;
+  background-color: red;
+}
+.lunbo .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.lunbo .swiper-container .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.lunbo .swiper-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.lunbo .swiper-container .swiper-pagination span {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+.hovers {
+  width: 85%;
+  margin: 0 auto;
+  height: 20%;
+}
+.hovers ul {
+  margin-top: -10px;
+}
+.hovers ul li {
+  width: 25%;
+  padding-top: 7px;
+  height: 125px;
+  float: left;
+  padding-top: 10px;
+  list-style: none;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.8s ease 0s;
+}
+.hovers ul li .back {
+  width: 80px;
+  height: 70px;
+  display: inline-block;
+}
+.hovers ul li p {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  margin-left: -5px;
+}
+.hovers ul li:hover {
+  transform: scale(1);
+  z-index: 100;
+  background-color: #a7cf53;
+}
+.hovers ul li:hover p {
+  color: white;
+}
+.hovers ul :nth-child(1) .back {
+  background: url("../image/h_icon01.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.hovers ul :nth-child(2) .back {
+  background: url("../image/h_icon02.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.hovers ul :nth-child(3) .back {
+  background: url("../image/h_icon03.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.hovers ul :nth-child(4) .back {
+  background: url("../image/h_icon04.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.hovers ul :nth-child(1):hover .back {
+  background: url("../image/h_icon01_hover.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.hovers ul :nth-child(2):hover .back {
+  background: url("../image/h_icon02_hover.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.hovers ul :nth-child(3):hover .back {
+  background: url("../image/h_icon03_hover.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.hovers ul :nth-child(4):hover .back {
+  background: url("../image/h_icon04_hover.png") no-repeat center;
+  background-size: 70px 60px;
+}
+.footer {
+  width: 100%;
+  height: 613px;
+  background-color: #404040;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+}
+.footer .foot {
+  width: 100%;
+  height: 71%;
+}
+.footer .foot dl::before {
+  display: block;
+  content: "";
+  width: 13%;
+  height: 1px;
+  background-color: #139ca6;
+  position: absolute;
+  top: 103px;
+  left: -50px;
+}
+.footer .foot dl {
+  margin-top: 9.8%;
+  position: relative;
+}
+.footer .foot dl dd::after {
+  display: block;
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: #139ca6;
+  position: absolute;
+  top: 44%;
+  left: 89%;
+}
+.footer .foot dl dd {
+  width: 25%;
+  height: 100%;
+  margin-left: 75px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.footer .foot dl dd div {
+  margin: 0 auto;
+  width: 174px;
+  height: 174px;
+  border: 13px solid #139ca6;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.footer .foot dl dd div img {
+  width: 75%;
+  height: 75%;
+  margin-top: 13%;
+  text-align: center;
+}
+.footer .foot dl dd h1 {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #139ca6;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 120px;
+  color: #139ca6;
+}
+.footer .foot dl dd p {
+  margin-top: 15px;
+}
+.footer .foot dl dd p a {
+  text-decoration: none;
+  color: white;
+}
+.footer .foot dl .liebiao {
+  top: 40px;
+}
+.footer .foot dl .liebiao::after {
+  top: 66px;
+  left: 80%;
+}
+.footer .neironga .uls {
+  margin-top: -70px;
+  list-style: none;
+}
+.footer .neironga .uls div {
+  width: 144px;
+  height: 43px;
+  border: 1px solid #139ca6;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 43px;
+  color: #139ca6;
+  float: left;
+  margin-left: 10%;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+.footer .neironga .uls li {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  position: relative;
+}
+.footer .neironga .uls li a {
+  color: white;
+  text-decoration: none;
+}
+.footer .neironga .uls li::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #139ca6;
+  position: absolute;
+  top: 0px;
+  left: -17px;
+}
+.footer .banquan {
+  margin-top: 50px;
+  position: relative;
+  left: 330px;
+  color: #139ca6;
+}
+.footer .banquan a {
+  color: white;
+  text-decoration: none;
+}

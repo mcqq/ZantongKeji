@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+	<meta charset="UTF-8">
+	<title>赞同咨询</title>
+	<link rel="stylesheet" href="css/ztzx.css">
+</head>
+<body>
+	<!--广告图-->
+	<div class="banner"></div>
+	<!--咨询部分-->
+	<main>
+		<div class="main_box">
+			<div class="head">
+				<p>
+					<a href="">首页</a> > <span>赞同咨询</span>
+				</p>
+			</div>
+			<h1>赞同资讯</h1>
+			<div class="main_list">
+				<ul></ul>
+				<div class="moreTotal"><a href="javascript:;">more +</a></div>
+			</div>
+		</div>
+	</main>
+	<!--底部-->
+	<footer>
+		<div class="foot_box">
+			<div class="foot_top">
+				<dl>
+					<dd>
+						<div>
+							<img src="image/zyx_code.jpg" alt="">
+						</div>
+						<p>扫一扫，关注赞同公众号</p>
+					</dd>
+					<dd>
+						<h1>
+							<span>关于我们</span>
+						</h1>
+						<ul>
+							<li><a href="">联系我们</a></li>
+							<li><a href="">赞同新闻</a></li>
+							<li><a href="">企业招聘</a></li>
+						</ul>
+					</dd>
+					<dd>
+						<h1>
+							<span>精选栏目</span>
+						</h1>
+						<ul>
+							<li><a href="">咨询设计</a></li>
+							<li><a href="">技术平台</a></li>
+							<li><a href="">解决方案</a></li>
+							<li><a href="">客户反馈</a></li>
+							<li><a href="">视频中心</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="foot_cen">
+				<ul>
+					<li>联系我们</li>
+					<li class="lis">咨询热线：010-64731133</li>
+					<li class="lis"><a href="">在线客服</a></li>
+					<li>邮箱：shichangbu@agree.com.cn</li>
+				</ul>
+			</div>
+			<div class="foot_bot">
+				版权所有：赞同科技股份有限公司 <a href="">备案号：京ICP备14027589号-1</a>
+			</div>
+		</div>
+	</footer>
+	<!--侧边-->
+	<div class="aside">
+		<ul>
+			<li>
+				<b class="dh"></b>
+				<p>010-64731133</p>
+			</li>
+			<li>
+				<b class="qq"></b>
+				<p><a href="">在线咨询</a></p>
+			</li>
+			<li>
+				<b class="back"></b>
+				<p>返回顶部</p>
+			</li>
+		</ul>
+	</div>
+	<script type="text/template" id="template">
+		<li>
+			<div class="time">
+				<p>@date@</p>
+				<span>@year@</span>
+			</div>
+			<div class="cont">
+				<h1><a href="">@title@</a></h1>
+				<div class="share">
+					<div>
+						<span>分享</span>
+						<a href="" class="xl"></a>
+						<a href="" class="tx"></a>
+						<a href="" class="qq"></a>
+					</div>
+				</div>
+				<p>@text@</p>
+				<a href="" class="more">@more@</a>
+			</div>
+		</li>
+	</script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+
+		$(function () {
+            function Ztzx(){
+				this.init();
+            }
+            Ztzx.prototype={
+                constructor:Ztzx,
+				init:function () {
+					this.banner();
+					this.json();
+					this.bindEvent();
+					this.back();
+                },
+				banner:function () {
+                    // 广告图的高
+                    $(".banner").height($(window).height());
+                },
+				json:function () {
+                    $.get("json/ztzx.json",function(data){
+                        let template = $("#template").html();
+                        data = typeof data=="object"?data:eval("("+data+")");
+                        let arry  =data.data;
+                        // for (let i = 0; i < 4; i++) {
+                        //     let str = chuliFn(template,arry[i]);
+                        //     $(".main_list ul").append(str);
+                        // }
+                        for (let i = 0; i < 4; i++) {
+                            let idx = suijishu(arry.length-1,0);
+                            let str = chuliFn(template,arry[idx])
+                            $(".main_list ul").append(str);
+                        }
+                    })
+                    function chuliFn(template,data) {
+                        return template.replace(/\@([\w]+)\@/g,function(match,$1){
+                            return data[$1];
+                        })
+                    }
+                    function suijishu(max,min){
+                        return parseInt(Math.random()*(max-min)+min);
+                    }
+                },
+				bindEvent:function () {
+                    var self=this;
+					$(".moreTotal").on("click",function () {
+						self.json();
+                    })
+                },
+				back:function () {
+                    $(window).scroll(function () {
+                        let top = $(window).scrollTop();
+                        if(top >0){
+                            $(".back").fadeIn();
+                        }else{
+                            $(".back").fadeOut();
+                        }
+                    });
+					$(".back").on("click",function () {
+                        $("html, body").animate({scrollTop:0},500);
+                    })
+                }
+			}
+			new Ztzx();
+        })
+	</script>
+</body>
+</html>

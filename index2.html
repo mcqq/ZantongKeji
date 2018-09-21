@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style2.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" type="text/css" href="css/style2_768px.css" media="screen and (max-width:768px)"/>
+    <title>赞同科技-产品</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <!-- 内容部分开始 -->
+    <div class="bigWidth">
+        <div class="smallWidth">
+            <div class="bigNav">
+                <ul class="smallNav">
+                    <li>
+                        <a href="#" class="firstA yi"></a>
+                        <h1>咨询服务</h1>
+                        <a href="#" class="firstB">点击了解</a>
+                    </li>
+                    <li>
+                        <a href="#" class="firstA er"></a>
+                        <h1>技术平台</h1>
+                        <a href="#" class="firstB">点击了解</a>
+                    </li>
+                    <li>
+                        <a href="#" class="firstA san"></a>
+                        <h1>解决方案</h1>
+                        <a href="#" class="firstB">点击了解</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 内容部分结束 -->
+    <!-- 脚部开始 -->
+    <footer class="footer">
+        <div class="smallWidth">
+            <div class="foot">
+                <dl>
+                    <dd>
+                        <div><img src='image/hhx_code.jpg'/></div>
+                        <p>扫一扫，关注赞同公众号</p>
+                    </dd>
+                    <dd class="liebiao">
+                        <h1><span>关于我们</span></h1>
+                        <p><a href='#'>联系我们</a></p>
+                        <p><a href='#'>赞同新闻</a></p>
+                        <p><a href='#'>企业招聘</a></p>
+                    </dd>
+                    <dd class="liebiao">
+                        <h1><span>精选栏目</span></h1>
+                        <p><a href='#'>咨询设计</a></p>
+                        <p><a href='#'>技术平台</a></p>
+                        <p><a href='#'>解决方案</a></p>
+                        <p><a href='#'>客户反馈</a></p>
+                        <p><a href='#'>视频中心</a></p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="neironga">
+                <ul class="uls">
+                    <div>联系我们</div>
+                    <li>咨询热线：010-64731133</li>
+                    <li><a href='#'>在线客服</a></li>
+                    <li>邮箱：shichangbu@agree.com.cn</li>
+                </ul>
+            </div>
+            <br>
+            <div class="banquan">版权所有：赞同科技股份有限公司<span> <a href="#">备案号：京ICP备14027589号-1</a></span></div>
+        </div>
+    </footer>
+    <!-- 脚部结束 -->
+    <!--侧边-->
+	<div class="aside">
+		<ul>
+			<li>
+				<b class="dh"></b>
+				<p>010-64731133</p>
+			<>
+			<li>
+				<b class="qq"></b>
+				<p><a href="">在线咨询</a></p>
+			<>
+			<li>
+				<b class="back"></b>
+				<p>返回顶部</p>
+			<>
+		</ul>
+    </div>
+    <!-- 侧边结束 -->
+</body>
+</html>
+<script src="js/index2.js"></script>
+<script>
+    $(window).scroll(function () {
+        let top = $(window).scrollTop();
+        if(top >0){
+            $(".back").fadeIn();
+        }else{
+            $(".back").fadeOut();
+        }
+    });
+    $(".back").on("click",function () {
+        $("html, body").animate({scrollTop:0},500);
+    })
+</script>
