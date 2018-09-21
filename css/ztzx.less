@@ -1,0 +1,309 @@
+*{
+  margin:0;
+  padding:0;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+body{
+  font-family: "SimHei"
+}
+//广告图
+.banner{
+  background: url(../image/zyx_bigImg.jpg) no-repeat center top;
+  background-size: cover;
+}
+//咨询部分
+main{
+  width: 100%;
+  .main_box{
+    width: 80%;
+    margin: 0 auto;
+    .head{
+      padding:87px 0 54px 0;
+      font-size: 16px;
+      p{
+        line-height: 38px;
+        border-bottom: 1px solid #9fa0a0;
+        box-shadow: 0 1px 0 #e7e8e8;
+        span{
+          color:#8fc31f;
+        }
+      }
+    }
+    >h1{
+      color:#000;
+      padding-bottom: 126px;
+      font-size: 47px;
+      font-weight: 500;
+    }
+    .main_list{
+      margin-bottom: 2%;
+      li{
+        font-size: 18px;
+        padding-left: 0;
+        position: relative;
+        padding-bottom: 46px;
+        min-height: 320px;
+        overflow: hidden;
+        .time{
+          float: left;
+          width: 120px;
+          height: 120px;
+          font-size: 18px;
+          color: #fff;
+          box-sizing: border-box;
+          padding-top: 30px;
+          border-radius: 50%;
+          background-color: #8fc31f;
+          text-align: center;
+          p{
+            font-size: 24px;
+          }
+        }
+        .cont{
+          width: 80%;
+          float: right;
+          h1{
+            font-size: 24px;
+            font-weight: normal;
+            a:hover{
+              color:#9bc939;
+            }
+          }
+          .share{
+            border-bottom: 1px solid #9fa0a0;
+            box-shadow:0 1px 0 #e7e8e8;
+            padding:20px 0;
+            color: #444;
+            a{
+              display: inline-block;
+              margin-left: 15px;
+              vertical-align: middle;
+              width: 31px;
+              height: 30px;
+              background: url(../image/zyx_share.png) no-repeat;
+            }
+            .xl{
+              background-position: 0 0;
+            }
+            .tx{
+              background-position: -47px 0;
+            }
+            .qq{
+              background-position: -93px 0;
+            }
+          }
+          p{
+            color:#727171;
+            padding:20px 0;
+          }
+          a.more{
+            color: #727171;
+            &:hover{
+              color:#9bc939;
+            }
+          }
+        }
+      }
+      .moreTotal{
+        text-align: center;
+        padding:48px 57px;
+        a{
+          display: block;
+          height: 46px;
+          line-height: 46px;
+          color:#fff;
+          background-color: #7fae1c;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+//底部
+footer{
+  background-color: #404040;
+  padding:10% 0 3%;
+  color:#fff;
+  font-size: 18px;
+  overflow: hidden;
+  .foot_box{
+    width: 80%;
+    margin: 0 auto;
+    .foot_top{
+      position: relative;
+      overflow: hidden;
+      dd{
+        float: left;
+        text-align: center;
+        width: 30%;
+        &:hover h1{
+          background-color: #00a6b1;
+          color: #fff;
+          transition: all ease 0.5s;
+        }
+        h1{
+          font-size: 18px;
+          font-weight: normal;
+          color: #00a6b1;
+          border: 1px solid #00a6b1;
+          border-radius: 50%;
+          width: 118px;
+          height: 118px;
+          margin: 0 auto;
+          line-height: 118px;
+          position: relative;
+        }
+        ul li{
+          line-height: 32px;
+          a{
+            color: #fff;
+            &:hover{
+              color: #139ca6;
+            }
+          }
+        }
+        ul li:nth-child(1){
+          padding-top: 22px;
+        }
+      }
+      dd:nth-child(1){
+        width: 36%;
+        padding-top: -40px;
+        div{
+          border: 13px solid #139ca6;
+          border-radius: 50%;
+          background-color: #fff;
+          text-align: center;
+          height: 200px;
+          width: 200px;
+          margin: 0 auto;
+          overflow: hidden;
+          box-sizing: border-box;
+          padding: 5%;
+          img{
+            width: 100%;
+          }
+        }
+        p{
+          line-height: 32px;
+          padding-top:13px ;
+        }
+      }
+    }
+    .foot_cen{
+      text-align: center;
+      overflow: hidden;
+      clear: both;
+      padding-left: 115px;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      ul li{
+        float: left;
+        padding: 10px 2%;
+        position: relative;
+        a{
+          color: #fff;
+          &:hover{
+            color: #139ca6;
+          }
+        }
+      }
+      li:nth-child(1){
+        border: 1px solid #139ca6;
+        color: #139ca6;
+        padding: 10px 35px !important;
+        border-radius: 30px;
+      }
+      li.lis:before{
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 50%;
+        background-color: #139ca6;
+        right: 0;
+        top: 25%;
+      }
+    }
+    .foot_bot{
+      text-align: center;
+      color: #139ca6;
+      a{
+        margin-left: 20px;
+        color:#fff;
+        &:hover{
+          color: #139ca6;
+        }
+      }
+    }
+  }
+}
+.aside{
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  z-index: 100;
+  li{
+    height: 50px;
+    position: relative;
+    margin-bottom: 1px;
+    b{
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      background-color: #404040;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .dh{
+      background-image: url(../image/zyx_tel.png);
+    }
+    .qq{
+      background-image: url(../image/zyx_qq.png);
+    }
+    .back{
+      background-image: url(../image/zyx_gettop.png);
+    }
+    p{
+      position: absolute;
+      background-color: #404040;
+      top: 0;
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+      line-height: 50px;
+      font-size: 18px;
+      a{
+        color:#fff;
+      }
+    }
+  }
+  li:nth-child(1){
+    &:hover p{
+      right: 50px;
+      opacity: 1;
+      transition: all ease 0.2s;
+    }
+    p{
+      width: 144px;
+      right: -144px;
+    }
+  }
+  li:nth-child(2),li:nth-child(3) {
+    &:hover p{
+      right: 50px;
+      opacity: 1;
+      transition: all ease 0.2s;
+    }
+    p{
+      width: 94px;
+      right: -94px
+    }
+  }
+}
