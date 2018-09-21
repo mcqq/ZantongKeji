@@ -1,0 +1,378 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  position: relative;
+}
+a{
+  text-decoration:none
+}
+li{
+  list-style: none;
+}
+#menu{
+  position: fixed;
+  right: 2%;
+  top: 20%;
+  z-index: 10;
+  li{
+    border: 1px solid #fff;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 7px;
+    position: relative;
+    display: table;
+    background-color: #a7cc53;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    span{
+      font-style: normal;
+      color: #fff;
+      display: table-cell;
+      vertical-align: middle;
+      height: 58px;
+      line-height: 20px;
+      position: relative;
+      z-index: 2;
+      width: 58px;
+    }
+  }
+}
+.one_b{
+  width: 100%;
+  height: 798px;
+  background-color: #6bc9f6;
+  padding-top: 70px;
+  .one_c{
+    width: 64%;
+    height: 625px;
+    margin:0 auto;
+    position: relative;
+    .tit{
+      padding-left: 360px;
+      color: #fff;
+      font-size: 40px;
+      @keyframes dong{
+        0% {
+          padding-left: 90px;
+          opacity: 1;
+        }
+        50% {
+          padding-left: 0;
+          opacity: 0.7;
+        }
+        100% {
+          padding-left: 90px;
+          opacity: 1;
+        }
+      }
+      @keyframes dong1{
+        0% {
+          padding-left: 0;
+          opacity: 0.7;
+        }
+        50% {
+          padding-left: 90px;
+          opacity: 1;
+        }
+        100% {
+          padding-left: 0;
+          opacity: 0.7;
+        }
+      }
+      dl:nth-child(1) {
+        animation: ease-in infinite 6s dong;
+        span{
+          font-size: 64px;
+        }
+      }
+      dl:nth-child(2) {
+        padding-left: 90px;
+        animation: ease-in infinite 6s dong1;
+      }
+    }
+    .img{
+      .search {
+        opacity: 1;
+
+        background: url(../image/02_mcq.png) no-repeat;
+        width: 213px;
+        height: 228px;
+        position: absolute;
+        bottom: -180px;
+        left: 340px;
+        z-index: 20;
+
+      }
+      .search::before{
+        transition: all 1s;
+        background: url(../image/03_mcq.png) no-repeat center center;
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
+        position: absolute;
+        content: '';
+        right: 13px;
+        top: 14px;
+        opacity: 0;
+
+      }
+      .one::before{
+        opacity: 1;
+      }
+    }
+    .detail{
+      clear: both;
+      overflow: hidden;
+      padding: 0 153px;
+      margin-top: -100px;
+      z-index: 10;
+      position: relative;
+      a.cur{
+        background-color: #00a6b1;
+        border-color: #00a6b1;
+        color: #fff;
+        float: right;
+      }
+      a{
+        padding: 10px 35px;
+        font-size: 27px;
+        color: #00a6b1;
+        border: 1px solid #00a6b1;
+        border-radius: 30px;
+        display: inline-block;
+        color: #fff;
+        border-color: #fff;
+        transition: all 1s;
+      }
+      a:hover{
+        border-color: #00a6b1;
+        background-color: #00a6b1;
+        color: #fff;
+      }
+    }
+  }
+}
+.one_q{
+  width: 100%;
+  height: 1030px;
+  .title{
+    text-align: center;
+    font-size: 60px;
+    color: #139ca6;
+    padding-top: 150px;
+    padding-bottom: 62px;
+  }
+  .ban1{
+    width: 100%;
+    height: 750px;
+  padding-top: 133px;
+    background: url("../image/02_mcq.jpg") no-repeat;
+    .ban_c{
+      width: 64%;
+      height: 500px;
+      margin:0 auto;
+      dd{
+        float: left;
+        width: 20%;
+        text-align: center;
+        position: relative;
+        min-height: 500px;
+        figure {
+          text-indent: -999em;
+          height: 378px;
+          background-repeat: no-repeat;
+          background-position: center bottom;
+          position: relative;
+        }
+        figure::before{
+          transition: all 0.5s;
+          position: absolute;
+          content: '';
+          width: 100%;
+          left: 0;
+          top: 0;
+          height: 0;
+          z-index: 999;
+          background-repeat: no-repeat;
+          background-position: center top;
+        }
+
+        h1{
+          font-weight: normal;
+          font-size: 24px;
+          padding: 20px 0;
+          margin: 0;
+          position: relative;
+        }
+      }
+      dd:nth-child(1) figure::before {
+        background-image: url(../image/4_mcq.png);
+      }
+      dd:hover figure::before{
+        height: 380px;
+      }
+      dd:nth-child(1) h1 {
+        color: #8fc31f;
+      }
+      dd:nth-child(1) figure {
+        background-image: url(../image/04_mcq.png);
+      }
+      dd:nth-child(2) figure {
+        background-image: url(../image/05_mcq.png);
+      }
+      dd:nth-child(2) figure::before {
+        background-image: url(../image/5_mcq.png);
+      }
+      dd:nth-child(3) figure {
+        background-image: url(../image/06_mcq.png);
+      }
+      dd:nth-child(3) figure::before {
+        background-image: url(../image/6_mcq.png);
+      }
+      dd:nth-child(4) figure {
+        background-image: url(../image/07_mcq.png);
+      }
+      dd:nth-child(4) figure::before {
+        background-image: url(../image/7_mcq.png);
+      }
+      dd:nth-child(5) figure {
+        background-image: url(../image/08_mcq.png);
+      }
+      dd:nth-child(5) figure::before {
+        background-image: url(../image/8_mcq.png);
+      }
+      dd:nth-child(2) h1 {
+        color: #a7d3af;
+      }
+      dd:nth-child(3) h1 {
+        color: #a0d9f6;
+      }
+      dd:nth-child(4) h1 {
+        color: #00a0e9;
+      }
+      dd:nth-child(5) h1 {
+        color: #139ca6;
+      }
+      .hover h1::before{
+        transition: all 1s;
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid #8fc31f;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -8px;
+        opacity: 0;
+      }
+     .hover:hover h1::before{
+        bottom: 0;
+        opacity: 1;
+      }
+      .hover .hide_job {
+        position: absolute;
+        background-color: #f2f2f2;
+        width: 156px;
+        top: 452px;
+        font-size: 18px;
+        left: 50%;
+        margin-left: -78px;
+        opacity: 0;
+        transition: all 1s;
+        li{
+          height: 44px;
+          line-height: 44px;
+        }
+        li a{
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          color: #000;
+      }
+        li:hover a{
+          background-color: #8fc31f;
+          color: #fff;
+        }
+      }
+      dd:hover .hide_job{
+        opacity: 1;
+
+      }
+    }
+  }
+}
+.one_m{
+  width: 100%;
+  height: 580px;
+  background-color: #6bc9f6;
+  color: #000;
+  .auto {
+    width: 64%;
+    margin:0 auto;
+    background: url(../image/03_mcq.jpg) no-repeat left bottom;
+    height: 580px;
+    box-sizing: border-box;
+    padding-left: 550px;
+    dl{
+      text-align: center;
+      font-size: 30px;
+      color: #000;
+      padding-top: 160px;
+      padding-bottom: 130px;
+      span{
+        color: #faee00;
+        font-size: 35px;
+      }
+    }
+    .detail {
+      padding-left: 130px;
+      padding-right: 97px;
+      overflow: hidden;
+      clear: both;
+      a{
+        transition: all 1s;
+        float: left;
+        font-size: 23px;
+        color: #fff;
+        border-color: #fff;
+        padding: 10px 35px;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        display: inline-block;
+      }
+      a:hover{
+        border-color: #00a6b1;
+        background: #00a6b1;
+      }
+       a:last-child {
+        float: right;
+      }
+    }
+    .tips{
+      padding-top: 26px;
+      padding-left: 128px;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+.one_t{
+  width: 64%;
+  height: 771px;
+  padding-top: 40px;
+  margin:0 auto;
+  .about_title {
+    text-align: center;
+    font-size: 64px;
+    padding-bottom: 50px;
+    color: #00a6b1;
+    ul{
+      padding: 0 76px;
+    }
+  }
+}
