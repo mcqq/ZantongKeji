@@ -4,6 +4,7 @@
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 ul,
 li {
@@ -370,140 +371,163 @@ section .nav form ol input {
 .smallWidth {
   margin: 0  80px auto;
 }
-.footer {
-  width: 100%;
+footer {
   background-color: #404040;
+  padding: 10% 0 3%;
   color: #fff;
   font-size: 18px;
   overflow: hidden;
 }
-.footer .foot {
+footer .foo {
+  width: 1200px;
+  margin: 0 auto;
+  height: 500px;
+}
+footer .foo .foo_a {
+  position: relative;
+}
+footer .foo .foo_a dl dd {
+  float: left;
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+footer .foo .foo_a dl dd p {
+  margin: 0;
+  line-height: 32px;
+}
+footer .foo .foo_a dl dd:nth-child(1) {
+  width: 40%;
+  margin-top: -40px;
+}
+footer .foo .foo_a dl dd:nth-child(1) figure {
+  border: 13px solid #139ca6;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 5%;
+}
+footer .foo .foo_a dl dd:nth-child(1) figure img {
   width: 100%;
 }
-.footer .foot dl::before {
-  display: block;
-  content: "";
-  width: 13%;
-  height: 1px;
-  background-color: #139ca6;
-  position: absolute;
-  top: 103px;
-  left: -50px;
-}
-.footer .foot dl {
-  margin-top: 9.8%;
-  position: relative;
-}
-.footer .foot dl dd::after {
-  display: block;
-  content: "";
-  width: 60%;
-  height: 1px;
-  background-color: #139ca6;
-  position: absolute;
-  top: 44%;
-  left: 89%;
-}
-.footer .foot dl dd {
-  width: 25%;
-  height: 100%;
-  margin-left: 75px;
-  position: relative;
-  float: left;
+footer .foo .foo_a dl dd:nth-child(1) p {
+  padding-top: 13px;
   text-align: center;
 }
-.footer .foot dl dd div {
-  margin: 0 auto;
-  width: 174px;
-  height: 174px;
-  border: 13px solid #139ca6;
-  text-align: center;
+footer .foo .foo_a dl dd:nth-child(2)::before {
+  position: absolute;
+  content: '';
+  left: -25%;
+  height: 1px;
+  width: 50%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_a dl dd:nth-child(2) h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #00a6b1;
+  border: 1px solid #00a6b1;
   border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  margin: 0 auto;
+  line-height: 118px;
+  position: relative;
+  display: block;
+  margin-bottom: 23px;
+}
+footer .foo .foo_a dl dd:nth-child(2) p a {
+  color: #fff;
+}
+footer .foo .foo_a dl dd:nth-child(3)::before {
+  position: absolute;
+  content: '';
+  left: -25%;
+  height: 1px;
+  width: 50%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_a dl dd:nth-child(3) h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #00a6b1;
+  border: 1px solid #00a6b1;
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  margin: 0 auto;
+  line-height: 118px;
+  position: relative;
+  display: block;
+  margin-bottom: 23px;
+}
+footer .foo .foo_a dl dd:nth-child(3) p a {
+  color: #fff;
+}
+footer .foo .foo_a::before {
+  position: absolute;
+  content: '';
+  left: -63%;
+  height: 1px;
+  width: 70%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_a::after {
+  position: absolute;
+  content: '';
+  right: -63%;
+  height: 1px;
+  width: 70%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_b {
+  text-align: center;
   overflow: hidden;
-  background-color: #fff;
+  clear: both;
+  padding-left: 115px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-.footer .foot dl dd div img {
-  width: 75%;
-  height: 75%;
-  margin-top: 13%;
-  text-align: center;
-}
-.footer .foot dl dd h1 {
-  margin: 0 auto;
-  width: 120px;
-  height: 120px;
+footer .foo .foo_b ul ol {
+  float: left;
   border: 1px solid #139ca6;
-  border-radius: 50%;
-  font-size: 20px;
-  text-align: center;
-  line-height: 120px;
   color: #139ca6;
-}
-.footer .foot dl dd p {
-  margin-top: 15px;
-}
-.footer .foot dl dd p a {
-  text-decoration: none;
-  color: white;
-}
-.footer .foot dl .liebiao {
-  top: 40px;
-}
-.footer .foot dl .liebiao::after {
-  top: 66px;
-  left: 80%;
-}
-.footer .neironga {
-  margin-top: 119px;
-}
-.footer .neironga .uls {
-  margin-top: -70px;
-  list-style: none;
-}
-.footer .neironga .uls div {
-  width: 144px;
-  height: 43px;
-  border: 1px solid #139ca6;
+  padding: 10px 35px;
   border-radius: 30px;
-  text-align: center;
-  line-height: 43px;
-  color: #139ca6;
+}
+footer .foo .foo_b ul li {
   float: left;
-  margin-left: 10%;
   position: relative;
-  top: -10px;
-  left: -10px;
+  padding: 10px 2%;
 }
-.footer .neironga .uls li {
-  float: left;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-  position: relative;
-}
-.footer .neironga .uls li a {
-  color: white;
-  text-decoration: none;
-}
-.footer .neironga .uls li::before {
-  display: block;
-  content: "";
-  width: 1px;
-  height: 20px;
-  background-color: #139ca6;
+footer .foo .foo_b ul li::before {
   position: absolute;
-  top: 0px;
-  left: -17px;
+  content: '';
+  width: 1px;
+  height: 50%;
+  background-color: #139ca6;
+  right: 0;
+  top: 25%;
 }
-.footer .banquan {
-  margin-top: 50px;
-  position: relative;
-  left: 330px;
+footer .foo .foo_c {
+  text-align: center;
   color: #139ca6;
 }
-.footer .banquan a {
-  color: white;
-  text-decoration: none;
+footer .foo .foo_c span {
+  margin-left: 20px;
+  text-align: center;
+  color: #139ca6;
 }
-/*# sourceMappingURL=endorse.css.map */
+footer .foo .foo_c span a {
+  color: #fff;
+}
+/*# sourceMappingURL=endorse-to.css.map */
