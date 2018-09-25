@@ -157,16 +157,18 @@ nav .list_nav li ::before {
 .hovers {
   width: 85%;
   margin: 0 auto;
+  position: relative;
+  z-index: 999;
   height: 20%;
 }
 .hovers ul {
   margin-top: -10px;
 }
 .hovers ul li {
-  width: 25%;
   padding-top: 7px;
   height: 125px;
   float: left;
+  width: 25%;
   padding-top: 10px;
   list-style: none;
   text-align: center;
@@ -185,8 +187,8 @@ nav .list_nav li ::before {
   margin-left: -5px;
 }
 .hovers ul li:hover {
-  transform: scale(1);
-  z-index: 100;
+  transform: scale(1.2);
+  z-index: 999;
   background-color: #a7cf53;
 }
 .hovers ul li:hover p {
@@ -226,7 +228,7 @@ nav .list_nav li ::before {
 }
 .footer {
   width: 100%;
-  height: 613px;
+  height: 100%;
   background-color: #404040;
   color: #fff;
   font-size: 18px;
@@ -350,8 +352,7 @@ nav .list_nav li ::before {
 }
 .footer .banquan {
   margin-top: 50px;
-  position: relative;
-  left: 330px;
+  float: left;
   color: #139ca6;
 }
 .footer .banquan a {
