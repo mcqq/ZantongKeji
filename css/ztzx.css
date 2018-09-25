@@ -91,7 +91,7 @@ header .header_box .nav li .sub_box dl {
   overflow: hidden;
   height: 348px;
 }
-header .header_box .nav li .sub_box dl dd:first-child {
+header .header_box .nav li .sub_box dl .only {
   margin-left: 12.5%;
 }
 header .header_box .nav li .sub_box dl dd {
@@ -153,13 +153,13 @@ header .header_box .nav li .sub_box dl dd .lj a {
   padding: 5px 15px;
   border-radius: 20px;
 }
-header .header_box .nav li .sub_box dl dd:nth-child(3) {
+header .header_box .nav li .sub_box dl .last {
   position: relative;
 }
-header .header_box .nav li .sub_box dl dd:nth-child(3):hover .gz {
+header .header_box .nav li .sub_box dl .last:hover .gz {
   opacity: 1;
 }
-header .header_box .nav li .sub_box dl dd:nth-child(3) .img3 {
+header .header_box .nav li .sub_box dl .last .img3 {
   width: 78px;
   height: 64px;
   position: relative;
@@ -169,7 +169,7 @@ header .header_box .nav li .sub_box dl dd:nth-child(3) .img3 {
   text-align: center;
   transition: all 0.5s;
 }
-header .header_box .nav li .sub_box dl dd:nth-child(3) .img3 img {
+header .header_box .nav li .sub_box dl .last .img3 img {
   width: 93px;
   height: 93px;
   top: 0;
@@ -180,10 +180,10 @@ header .header_box .nav li .sub_box dl dd:nth-child(3) .img3 img {
   margin: auto;
   z-index: 10;
 }
-header .header_box .nav li .sub_box dl dd:nth-child(3) p {
+header .header_box .nav li .sub_box dl .last p {
   padding-top: 47px !important;
 }
-header .header_box .nav li .sub_box dl dd:nth-child(3) .gz {
+header .header_box .nav li .sub_box dl .last .gz {
   opacity: 0;
   transition: all 0.5s 0.1s;
   position: absolute;
