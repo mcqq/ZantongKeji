@@ -252,7 +252,7 @@
                     }
                 },
 				bindEvent:function () {
-                    var self=this;
+                    let self=this;
 					$(".moreTotal").on("click",function () {
 						self.json();
                     })
@@ -268,6 +268,18 @@
                     });
 					$(".back").on("click",function () {
                         $("html, body").animate({scrollTop:0},500);
+                    })
+                },
+                nav:function () {
+                    $("header li").on("mouseover",function () {
+                        $(this).children("a").css("border-bottom","2px solid #00a6b1")
+                        $(this).find(".sub_box").fadeIn();
+                        $("header").css("border-bottom","1px solid #00a6b1");
+                    })
+                    $("header li").on("mouseleave",function () {
+                        $(this).children("a").css("border-bottom","none");
+                        $(this).find(".sub_box").fadeOut();
+                        $("header").css("border-bottom","none");
                     })
                 }
 			}
