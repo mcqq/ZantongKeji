@@ -6,6 +6,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .one {
   width: 100%;
@@ -332,34 +333,36 @@ nav .list_nav li ::before {
   top: 230px;
   left: 450px;
 }
-.there {
+.page2 {
   width: 100%;
   height: 100%;
   background-color: #00a6b1;
   text-align: center;
   position: relative;
 }
-.there .texts {
+.page2 .texts {
   position: absolute;
-  top: 10px;
+  transition: all 2s ease 0s;
+  top: -30px;
   left: 40%;
 }
-.there h1,
-.there h3 {
+.page2 h1,
+.page2 h3 {
   color: white;
 }
-.there .there_bottom {
+.page2 .there_bottom {
   width: 70%;
   height: 70%;
   position: absolute;
   top: 130px;
   left: 15%;
 }
-.there .there_bottom img {
-  width: 100%;
-  height: 100%;
+.page2 .there_bottom img {
+  width: 0%;
+  height: 0%;
+  transition: all 1s ease 0.5s;
 }
-.there .right_yun {
+.page2 .right_yun {
   display: inline-block;
   width: 160px;
   height: 65px;
@@ -370,7 +373,7 @@ nav .list_nav li ::before {
   top: 45px;
   animation: rights 3s linear infinite;
 }
-.there .left_yun {
+.page2 .left_yun {
   display: inline-block;
   width: 160px;
   height: 65px;
@@ -403,29 +406,71 @@ nav .list_nav li ::before {
     left: 180px;
   }
 }
-.four {
+.page2.moving .texts {
+  position: absolute;
+  top: 10px;
+  left: 40%;
+}
+.page2.moving img {
+  width: 100%;
+  height: 100%;
+}
+.page3.moving .four_bottom {
+  width: 68%;
+  height: 75%;
+  position: absolute;
+  top: 130px;
+  left: 17%;
+}
+.page3.moving .four_bottom img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.page3 {
   width: 100%;
   height: 100%;
   position: relative;
   background-color: #f8f8ff;
 }
-.four .four_text {
+.page3 .four_text {
   position: absolute;
   top: 10px;
   left: 45%;
   text-align: center;
 }
-.four .four_text h1 {
+.page3 .four_text h1 {
   color: #139ca6;
 }
-.four .four_bottom {
+.page3 .four_bottom {
   width: 68%;
   height: 75%;
   position: absolute;
   top: 130px;
-  left: 18%;
+  left: -10%;
+  transition: all 1s ease 0s;
 }
-.four .four_bottom img {
+.page3 .four_bottom img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 3s ease 0s;
+}
+.five {
+  width: 100%;
+  height: 100%;
+  background: url("../image/bg.jpg") no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.five .five_top {
+  width: 45%;
+  height: 65%;
+  position: absolute;
+  top: 55px;
+  left: 27%;
+}
+.five .five_top img {
   width: 100%;
   height: 100%;
 }

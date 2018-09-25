@@ -1,13 +1,46 @@
-// $(".hovers ul li").on("mouseover",function(){
-//     // alert("hah");
-//     $(this).css({
-//         "transform": "scale(1.3)",
-//         "background-color": "rgb(167,207,83)"
-//     })
-// })
-// $(".hovers ul li").on("mouseout", function () {
-//     // alert("hah");
-//     $(this).css({
-//         "transform": "scale(1)",
-//     })
-// })
+$box = $("#box");
+var $points = $('.points li');
+var idx = 0;
+var $page = $('.page');
+var $h = $(window).height();
+var timer = null;
+$page.eq(0).addClass('moving');
+$(window).mousewheel(function (ev, dat) {
+
+    clearTimeout(timer);
+
+    timer = setTimeout(function () {
+
+        if (dat == -1) {
+            idx++;
+        } else {
+            idx--;
+        }
+
+        if (idx < 0) {
+            idx = 0;
+        }
+
+        if (idx > 8) {
+            idx = 8;
+        }
+
+        $('.box').animate({
+            top: -idx * $h
+        }, 300);
+
+        $page.eq(idx).addClass('moving').siblings().removeClass('moving');
+        $points.eq(idx).addClass('active').siblings().removeClass('active');
+
+    }, 200)
+
+})
+$points.click(function (event) {
+    idx = $(this).index();
+    $('.box').animate({
+        top: -idx * $h
+    }, 300);
+    $page.eq(idx).addClass('moving').siblings().removeClass('moving');
+    $points.eq(idx).addClass('active').siblings().removeClass('active');
+
+});
