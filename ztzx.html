@@ -16,9 +16,9 @@
 			</div>
 			<div class="nav">
 				<ul>
-					<li><a href="">首页</a></li>
+					<li><a href="index.html">首页</a></li>
 					<li class="product">
-						<a href="">产品</a>
+						<a href="index2.html">产品</a>
 						<div class="sub_box">
 							<dl>
 								<dd>
@@ -60,11 +60,11 @@
 							</dl>
 						</div>
 					</li>
-					<li><a href="">服务支持</a></li>
+					<li><a href="endorse.html">服务支持</a></li>
 					<li><a href="">赞同资讯</a></li>
-					<li><a href="">人才招聘</a></li>
+					<li><a href="rczp.html">人才招聘</a></li>
 					<li class="about">
-						<a href="">关于赞同</a>
+						<a href="TXL_About%20Agree.html">关于赞同</a>
 						<div class="sub_box">
 							<dl>
 								<dd class="only">
@@ -208,8 +208,9 @@
 		</li>
 	</script>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script src="json/ztzx.json"></script>
 	<script type="text/javascript">
-
+		console.log(jso.data);
 		$(function () {
             function Ztzx(){
 				this.init();
@@ -228,20 +229,17 @@
                     $(".banner").height($(window).height());
                 },
 				json:function () {
-                    $.get("json/ztzx.json",function(data){
+                    // function(){
+                    //     console.log(json.data)
                         let template = $("#template").html();
-                        data = typeof data=="object"?data:eval("("+data+")");
-                        let arry  =data.data;
-                        // for (let i = 0; i < 4; i++) {
-                        //     let str = chuliFn(template,arry[i]);
-                        //     $(".main_list ul").append(str);
-                        // }
+                        jso = typeof jso=="object"?jso:eval("("+jso+")");
+                        let arry  =jso.data;
                         for (let i = 0; i < 4; i++) {
                             let idx = suijishu(arry.length-1,0);
                             let str = chuliFn(template,arry[idx])
                             $(".main_list ul").append(str);
                         }
-                    })
+                    // }
                     function chuliFn(template,data) {
                         return template.replace(/\@([\w]+)\@/g,function(match,$1){
                             return data[$1];
