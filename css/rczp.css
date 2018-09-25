@@ -449,4 +449,136 @@ li {
 #nus li {
   width: 16%;
 }
-/*# sourceMappingURL=rczp.css.map */
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #404040;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+}
+.footer .foot {
+  width: 100%;
+  height: 71%;
+}
+.footer .foot dl::before {
+  display: block;
+  content: "";
+  width: 13%;
+  height: 1px;
+  background-color: #139ca6;
+  position: absolute;
+  top: 103px;
+  left: -50px;
+}
+.footer .foot dl {
+  margin-top: 9.8%;
+  position: relative;
+}
+.footer .foot dl dd::after {
+  display: block;
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: #139ca6;
+  position: absolute;
+  top: 44%;
+  left: 89%;
+}
+.footer .foot dl dd {
+  width: 25%;
+  height: 100%;
+  margin-left: 75px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.footer .foot dl dd div {
+  margin: 0 auto;
+  width: 174px;
+  height: 174px;
+  border: 13px solid #139ca6;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.footer .foot dl dd div img {
+  width: 75%;
+  height: 75%;
+  margin-top: 13%;
+  text-align: center;
+}
+.footer .foot dl dd h1 {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #139ca6;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 120px;
+  color: #139ca6;
+}
+.footer .foot dl dd p {
+  margin-top: 15px;
+}
+.footer .foot dl dd p a {
+  text-decoration: none;
+  color: white;
+}
+.footer .foot dl .liebiao {
+  top: 40px;
+}
+.footer .foot dl .liebiao::after {
+  top: 66px;
+  left: 80%;
+}
+.footer .neironga .uls {
+  margin-top: -70px;
+  list-style: none;
+}
+.footer .neironga .uls div {
+  width: 144px;
+  height: 43px;
+  border: 1px solid #139ca6;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 43px;
+  color: #139ca6;
+  float: left;
+  margin-left: 10%;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+.footer .neironga .uls li {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  position: relative;
+}
+.footer .neironga .uls li a {
+  color: white;
+  text-decoration: none;
+}
+.footer .neironga .uls li::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #139ca6;
+  position: absolute;
+  top: 0px;
+  left: -17px;
+}
+.footer .banquan {
+  margin-top: 50px;
+  float: left;
+  color: #139ca6;
+}
+.footer .banquan a {
+  color: white;
+  text-decoration: none;
+}

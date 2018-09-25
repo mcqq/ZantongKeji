@@ -21,8 +21,8 @@ $(window).mousewheel(function (ev, dat) {
             idx = 0;
         }
 
-        if (idx > 8) {
-            idx = 8;
+        if (idx > 2) {
+            idx = 2;
         }
 
         $('.box').animate({
@@ -33,9 +33,9 @@ $(window).mousewheel(function (ev, dat) {
         $points.eq(idx).addClass('active').siblings().removeClass('active');
 
     }, 200)
-
 })
 $points.click(function (event) {
+    alert("11");
     idx = $(this).index();
     $('.box').animate({
         top: -idx * $h

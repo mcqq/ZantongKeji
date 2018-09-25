@@ -40,6 +40,107 @@ body .TXL_content .TXL_title {
   padding-top: 45px;
   color: #fff;
 }
+body .TXL_map {
+  width: 100%;
+  background: url(../image/TXL_about_mapbg.jpg) no-repeat center top;
+  background-size: cover;
+}
+body .TXL_map .TXL_sub {
+  position: relative;
+  height: 770px;
+  margin: 0 auto;
+  transform: scale(0.8);
+  background: url(../image/TXL_about_map.png) no-repeat 0 0;
+}
+body .TXL_map .TXL_sub dl {
+  position: absolute;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all ease 1s;
+}
+body .TXL_map .TXL_sub dl:hover {
+  z-index: 10;
+}
+body .TXL_map .TXL_sub dl:hover dt:before {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+body .TXL_map .TXL_sub dl:hover dt:after {
+  border-left-width: 18px;
+  border-right-width: 18px;
+  border-top-width: 45px;
+  top: 28px;
+  left: -5px;
+}
+body .TXL_map .TXL_sub dl:hover dd {
+  display: block;
+}
+body .TXL_map .TXL_sub dl dt {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #e5004f;
+  text-indent: -999em;
+}
+body .TXL_map .TXL_sub dl dt:before {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  top: 50%;
+  border-radius: 50%;
+}
+body .TXL_map .TXL_sub dl dt:after {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 25px solid #e5004f;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  top: 21px;
+  left: 3px;
+}
+body .TXL_map .TXL_sub dl dd {
+  position: absolute;
+  left: 78px;
+  bottom: 0;
+  background-color: #00b5b6;
+  padding: 10px;
+  width: 255px;
+  display: none;
+}
+body .TXL_map .TXL_sub dl dd:before {
+  border-top: 20px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 35px solid #00b5b6;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  bottom: 25px;
+  left: -35px;
+}
+body .TXL_map .TXL_sub dl dd h1 {
+  font-size: 24px;
+  color: #faee00;
+  margin: 0;
+  padding-bottom: 10px;
+}
+body .TXL_map .TXL_sub dl dd p {
+  margin: 0;
+  font-size: 16px;
+}
+body .TXL_map .TXL_sub dl dd p span {
+  color: #faee00;
+}
 body .TXL_introduction {
   background-color: #f7f8f8;
   padding: 60px 0;
@@ -226,6 +327,113 @@ body .TXL_contcat .TXL_auto .TXL_ul li figure span {
 }
 body .TXL_contcat .TXL_auto .TXL_ul li a {
   color: #fff;
+}
+body .TXL_about_group {
+  padding-bottom: 114px;
+}
+body .TXL_about_group .TXL_about_title {
+  padding-top: 75px;
+  padding-bottom: 20px;
+  color: #00a6b1;
+  font-size: 50px;
+  text-align: center;
+}
+body .TXL_about_group .TXL_auto {
+  width: 1200px;
+  margin: 0 auto;
+}
+body .TXL_about_group .TXL_auto .TXL_singlePage {
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: normal;
+  line-height: 1.8;
+}
+body .TXL_about_group .TXL_auto .TXL_web_link {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 103px;
+}
+body .TXL_about_group .TXL_auto .TXL_web_link span {
+  display: inline-block;
+  border-radius: 50px;
+  border: 1px solid #00a6b1;
+  padding-left: 70px;
+  line-height: 76px;
+  font-size: 30px;
+  padding-right: 135px;
+  color: #00a6b1;
+  position: relative;
+}
+body .TXL_about_group .TXL_auto .TXL_web_link span:before {
+  background: url(../image/TXL_web_search.png) no-repeat;
+  width: 49px;
+  height: 49px;
+  right: 63px;
+  top: 13px;
+  position: absolute;
+  content: '';
+}
+body .TXL_about_group .TXL_map {
+  background: url(../image/TXL_map_big.jpg) no-repeat center top;
+  height: 700px;
+}
+body .TXL_about_group .TXL_map .TXL_auto {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+body .TXL_about_group .TXL_map .TXL_auto .TXL_location {
+  position: absolute;
+  left: 563px;
+  top: -60px;
+  background: url(../image/TXL_icon_location.png) no-repeat;
+  width: 155px;
+  height: 250px;
+  font-size: 38px;
+  color: #faee00;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30px;
+  cursor: pointer;
+  animation: mapicon 1s ease-in 0.5s infinite;
+}
+body .TXL_about_group .TXL_map .TXL_auto .TXL_address {
+  left: 744px;
+  font-size: 23px;
+  color: #000;
+  position: absolute;
+  width: 218px;
+}
+body .TXL_about_group .TXL_list .TXL_about_title {
+  padding-top: 0;
+  margin-top: -70px;
+  font-size: 50px;
+}
+body .TXL_about_group .TXL_list .TXL_auto {
+  width: 1200px;
+  margin: 0 auto;
+}
+body .TXL_about_group .TXL_list tr td {
+  border-bottom: 1px solid #999;
+  padding: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  color: #595757;
+}
+body .TXL_about_group .TXL_list tr:first-child td {
+  border-bottom: 1px solid #999;
+  padding: 20px 0;
+  text-align: center;
+  color: #595757;
+  color: #00a6b1;
+  font-size: 25px;
+  font-weight: bold;
+}
+body .TXL_about_group .TXL_list tr:first-child td:nth-child(1) {
+  width: 212px;
+}
+body .TXL_about_group .TXL_list tr:first-child td:nth-child(3) {
+  width: 256px;
 }
 body .footer {
   width: 100%;

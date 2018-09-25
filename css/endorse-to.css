@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+.same_img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  line-height: 104px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.sa_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  z-index: 10;
+}
+section {
+  background-color: #f7f8f8;
+  width: 100%;
+}
+section .nav {
+  width: 63.1%;
+  height: 1130px;
+  margin: 0 auto;
+}
+section .nav form form h1,
+section .nav form form h2 {
+  font-size: 24px;
+  line-height: 52px;
+}
+section .nav form h1 {
+  font-size: 36px;
+  padding-top: 70px;
+  line-height: 86px;
+  border-bottom: 1px solid #b3b4b4;
+  box-shadow: 0 1px 0 #d6d7d7;
+}
+section .nav form h2 {
+  font-size: 24px;
+  line-height: 52px;
+}
+section .nav form dl dt:nth-child(1) {
+  padding-bottom: 24px;
+}
+section .nav form dl dt:nth-child(1) .dahezi {
+  margin: 0;
+  float: left;
+  margin-right: 28px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #b8b8b8;
+  position: relative;
+  font-size: 21px;
+  width: 210px;
+}
+section .nav form dl dt:nth-child(1) .dahezi .dianjia {
+  padding-left: 20px;
+  display: block;
+  background: url(../image/grh_xia.jpg) no-repeat 90% center #fff;
+  color: #000;
+}
+section .nav form dl dt:nth-child(2) {
+  padding-bottom: 24px;
+  margin-top: 35px;
+}
+section .nav form dl dt:nth-child(2) textarea {
+  padding: 0 20px;
+  border: 1px solid #b8b8b8;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  height: 193px;
+}
+section .nav form dl dt:nth-child(3) .abo {
+  position: relative;
+  height: 24px;
+}
+section .nav form dl dt:nth-child(3) .abo input {
+  height: 40px;
+  width: 440px;
+  line-height: 40px;
+  float: left;
+  background: #FAFBFD;
+  border: 1px solid #d4d4d4;
+}
+section .nav form dl dt:nth-child(3) .abo .funjian {
+  display: inline-block;
+  width: 89px;
+  height: 30px;
+  line-height: 33px;
+  text-align: center;
+  background: #fff !important;
+  color: #fff;
+  font-size: 18px;
+  float: left;
+  margin-left: 27px;
+  /* display: none; */
+  input: unset;
+  border: none;
+}
+section .nav form dl dt:nth-child(3) .abo .tips {
+  position: absolute;
+  left: 616px;
+  top: 0;
+  color: #a9a9a9;
+  font-size: 14px;
+}
+section .nav form ul {
+  overflow: hidden;
+}
+section .nav form ul li {
+  float: left;
+  margin-right: 4%;
+  width: 47.7%;
+}
+section .nav form ul li h3 {
+  margin: 0;
+  font-size: 20px;
+  height: 55px;
+  line-height: 55px;
+  font-weight: normal;
+  color: #000;
+}
+section .nav form ul li input {
+  padding: 0 20px;
+  border: 1px solid #b8b8b8;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  float: left;
+}
+section .nav form ul li i {
+  display: block;
+  width: 78px;
+  height: 39px;
+  background: url(../image/grh_a.png);
+  /* float: left; */
+  float: right;
+  background-size: contain;
+}
+section .nav form ul li:nth-of-type(2n) {
+  margin-right: 0;
+}
+section .nav form ol {
+  padding-top: 28px;
+  text-align: center;
+}
+section .nav form ol input {
+  width: 164px;
+  height: 52px;
+  color: #00a6b1;
+  cursor: pointer;
+  border: solid 2px #00a6b1;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+.sanbu {
+  margin-top: -101px;
+  padding-bottom: 116px;
+}
+.sanbu .sanbu_ {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sanbu .sanbu_ .list h1 {
+  margin: 0;
+  line-height: 200px;
+  font-weight: normal;
+  position: relative;
+}
+.sanbu .sanbu_ .list h1 a {
+  color: #8fc31f;
+  line-height: normal;
+  margin-top: 100px;
+  float: right;
+  font-size: 32px;
+  font-family: Verdana;
+}
+.sanbu .sanbu_ .list h1 span {
+  color: #fff;
+  background-color: #8fc31f;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+  font-size: 36px;
+}
+.sanbu .sanbu_ .list ul li {
+  padding-top: 4%;
+  font-size: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #9fa0a0;
+  padding-bottom: 2%;
+  position: relative;
+  box-shadow: 0 1px 0 #e7e7e7;
+}
+.sanbu .sanbu_ .list ul li time {
+  float: right;
+  color: #858484;
+  font-size: 18px;
+}
+.sanbu .sanbu_ .list ul li a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #000;
+}
+.sanbu .sanbu_ .list ul li::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000;
+  right: -1px;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+.smallWidth {
+  margin: 0  80px auto;
+}
+footer {
+  background-color: #404040;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+}
+footer .foo {
+  width: 1200px;
+  margin: 0 auto;
+  height: 500px;
+}
+footer .foo .foo_a {
+  position: relative;
+}
+footer .foo .foo_a dl dd {
+  float: left;
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+footer .foo .foo_a dl dd p {
+  margin: 0;
+  line-height: 32px;
+}
+footer .foo .foo_a dl dd:nth-child(1) {
+  width: 40%;
+  margin-top: -40px;
+}
+footer .foo .foo_a dl dd:nth-child(1) figure {
+  border: 13px solid #139ca6;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 5%;
+}
+footer .foo .foo_a dl dd:nth-child(1) figure img {
+  width: 100%;
+}
+footer .foo .foo_a dl dd:nth-child(1) p {
+  padding-top: 13px;
+  text-align: center;
+}
+footer .foo .foo_a dl dd:nth-child(2)::before {
+  position: absolute;
+  content: '';
+  left: -25%;
+  height: 1px;
+  width: 50%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_a dl dd:nth-child(2) h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #00a6b1;
+  border: 1px solid #00a6b1;
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  margin: 0 auto;
+  line-height: 118px;
+  position: relative;
+  display: block;
+  margin-bottom: 23px;
+}
+footer .foo .foo_a dl dd:nth-child(2) p a {
+  color: #fff;
+}
+footer .foo .foo_a dl dd:nth-child(3)::before {
+  position: absolute;
+  content: '';
+  left: -25%;
+  height: 1px;
+  width: 50%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_a dl dd:nth-child(3) h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #00a6b1;
+  border: 1px solid #00a6b1;
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  margin: 0 auto;
+  line-height: 118px;
+  position: relative;
+  display: block;
+  margin-bottom: 23px;
+}
+footer .foo .foo_a dl dd:nth-child(3) p a {
+  color: #fff;
+}
+footer .foo .foo_a::before {
+  position: absolute;
+  content: '';
+  left: -63%;
+  height: 1px;
+  width: 70%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_a::after {
+  position: absolute;
+  content: '';
+  right: -63%;
+  height: 1px;
+  width: 70%;
+  background: #139ca6;
+  top: 59px;
+}
+footer .foo .foo_b {
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  padding-left: 115px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer .foo .foo_b ul ol {
+  float: left;
+  border: 1px solid #139ca6;
+  color: #139ca6;
+  padding: 10px 35px;
+  border-radius: 30px;
+}
+footer .foo .foo_b ul li {
+  float: left;
+  position: relative;
+  padding: 10px 2%;
+}
+footer .foo .foo_b ul li::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 50%;
+  background-color: #139ca6;
+  right: 0;
+  top: 25%;
+}
+footer .foo .foo_c {
+  text-align: center;
+  color: #139ca6;
+}
+footer .foo .foo_c span {
+  margin-left: 20px;
+  text-align: center;
+  color: #139ca6;
+}
+footer .foo .foo_c span a {
+  color: #fff;
+}
+.a_a {
+  width: 209px;
+  height: 100px;
+  background-color: #fff;
+  display: none;
+  border: 1px solid #b8b8b8;
+}
+.a_a ul li {
+  float: left !important;
+  width: 211px !important;
+  padding: 5px 18px !important;
+  cursor: pointer;
+}
+.a_a ul li:nth-child(1) {
+  border-bottom: 1px solid #b8b8b8;
+}
