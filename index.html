@@ -9,22 +9,106 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/swiper.css">
     <script src="js/jquery-3.2.1.min.js"></script>
+    
 </head>
 <body>
 <div class="one">
-    <nav>
-        <div class="navs">
-            <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
-            <ul class="list_nav">
+<!--头部-->
+<header>
+    <div class="header_box">
+        <div class="logo">
+            <a href=""></a>
+        </div>
+        <div class="nav">
+            <ul>
                 <li><a href="index.html">首页</a></li>
-                <li><a href="index2.html">产品</a></li>
+                <li class="product">
+                    <a href="index2.html">产品</a>
+                    <div class="sub_box">
+                        <dl>
+                            <dd>
+                                <div class="imgs">
+                                    <a href=""><img src="image/zyx_icon01.png" alt=""></a>
+                                </div>
+                                <p>咨询服务</p>
+                                <div class="lj">
+                                    <a href="">了解更多</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div class="imgs">
+                                    <a href=""><img src="image/zyx_icon02.png" alt=""></a>
+                                </div>
+                                <p>技术平台</p>
+                                <div class="lj">
+                                    <a href="">了解更多</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div class="imgs">
+                                    <a href=""><img src="image/zyx_icon03.png" alt=""></a>
+                                </div>
+                                <p>解决方案</p>
+                                <div class="lj">
+                                    <a href="">了解更多</a>
+                                </div>
+                            </dd>
+                            <dd class="last">
+                                <div class="img3">
+                                    <a href=""><img src="image/zyx_icon4.png" alt=""></a>
+                                </div>
+                                <p>关注我们</p>
+                                <div class="gz">
+                                    <img src="image/zyx_code.jpg" alt="">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
                 <li><a href="endorse.html">服务支持</a></li>
                 <li><a href="ztzx.html">赞同资讯</a></li>
                 <li><a href="rczp.html">人才招聘</a></li>
-                <li><a href="TXL_About Agree.html">关于赞同</a></li>
+                <li class="about">
+                    <a href="TXL_About Agree.html">关于赞同</a>
+                    <div class="sub_box">
+                        <dl>
+                            <dd class="only">
+                                <div class="imgs">
+                                    <a href=""><img src="image/zyx_about1.png" alt=""></a>
+                                </div>
+                                <p>关于赞同</p>
+                                <div class="lj">
+                                    <a href="">了解更多</a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div class="imgs">
+                                    <a href=""><img src="image/zyx_about2.png" alt=""></a>
+                                </div>
+                                <p>成功案例</p>
+                                <div class="lj">
+                                    <a href="">了解更多</a>
+                                </div>
+                            </dd>
+                            <dd class="last">
+                                <div class="img3">
+                                    <a href=""><img src="image/zyx_icon4.png" alt=""></a>
+                                </div>
+                                <p>关注我们</p>
+                                <div class="gz">
+                                    <img src="image/zyx_code.jpg" alt="">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
             </ul>
         </div>
-    </nav>
+        <div class="lianxi">
+            联系我们：010-64731133
+        </div>
+    </div>
+</header>
     <div class="lunbo">
         <div class="swiper-container">
             <!--包含子元素的滑块的容器-->
@@ -150,6 +234,7 @@
 <!-- 脚部结束 -->
 <script src="js/swiper.js"></script>
 <script src="js/qiao.js"></script>
+<script src="js/daohang.js"></script>
 <script>
 var swiper = new Swiper('.swiper-container', {
     autoplay:false, // 是否开始自动播放
