@@ -13,146 +13,176 @@ h1,h2,h3{
   font-weight: normal;
 }
 //头部
-.header{
-  height: 897px;
-  background: url(../image/grh_bjt.jpg) no-repeat center center;
-  background-size: cover;
-  .box{
-    //width: 1200px;
-    height: 100%;
+.same_img{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  line-height: 104px;
+  text-align: center;
+  transition:all 0.5s;
+}
+.sa_img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  z-index: 10;
+}
+header{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  font-size: 18px;
+  .header_box{
+    width: 80%;
     margin: 0 auto;
-    .table{
-      display: table;
-      width: 100%;
-      height: 100%;
-      .table_els{
-        display: table-cell;
-        vertical-align: middle;
-        .txt{
-          color: #fff;
+    overflow: hidden;
+    .logo a{
+      float: left;
+      background: url(../image/zyx_logo.png) no-repeat center center;
+      width: 167px;
+      height: 62px;
+    }
+    .lianxi{
+      line-height: 60px;
+      float: right;
+      color: #fff;
+    }
+    .nav{
+      float: left;
+      overflow: hidden;
+      margin-left: 421px;
+
+      li{
+        float: left;
+        padding: 0 28px;
+        >a{
+          display: block;
           position: relative;
-          width: 826px;
-          margin: 0 auto;
-          padding-top: 215px;
-          .xiaosi{
-            position: absolute;
-            top: 0;
-            left: 345px;
-            height: 326px;
-            background: url(../image/grh_go.png) no-repeat right bottom;
-            width: 360px;
-            dl{
-              position: absolute;
-              bottom: 24px;
-              text-indent: -999em;
-              background-repeat: no-repeat;
-              background-position: 0 top;
-              height: 100%;
+          color: #fff;
+          height: 60px;
+          line-height: 60px;
+        }
+        >a:before{
+          content: '';
+          position: absolute;
+          top: 19px;
+          right: -28px;
+          width: 1px;
+          height: 22px;
+          background-color: #fff;
+        }
+        .sub_box{
+          display: none;
+          z-index: 1000;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 63px;
+          background: rgba(0,0,0,.35);
+          dl{
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            height: 348px;
+            .only{
+              margin-left: 12.5%;
             }
-            dl:nth-child(1){
-              width: 77px;
-              /* height: 132px; */
-              background-image: url(../image/grh_d1.png);
-              left: 0;
-              animation: 3s linear 0.5s normal none infinite up;
-              -webkit-animation: 2s linear 0.5s normal none infinite up;
-            }
-            @keyframes up{
-              0%{
-                height: 100%;
+            dd{
+              float: left;
+              padding-top: 75px;
+              width: 25%;
+              height: 235px;
+              &:hover .imgs{
+                box-shadow: 0 0 10px 50px rgba(255, 255, 255, 0) inset;
               }
-              50%{
-                height: 70%;
+              &:hover .imgs:before{
+                transform: scale(1);
+                background-color: #acd146;
               }
-              100%{
-                height: 100%;
+              &:hover .lj{
+                opacity: 1!important;
+                transform: translateY(50px) !important;
               }
-            }
-            dl:nth-child(2){
-              width: 77px;
-              /* height: 132px; */
-              background-image: url(../image/grh_d2.png);
-              left: 83px;
-              animation: 2s linear 1s normal none infinite up;
-              -webkit-animation: 2s linear 1s normal none infinite upa;
-            }
-            @keyframes upa{
-              0%{
-                height: 100%;
+              .imgs{
+                width: 85px;
+                height: 85px;
+                border-radius:50%;
+                box-shadow: 0 0 0 2px #fff inset;
+                .same_img;
+                img{
+                  top: 16px;
+                  width: 52px;
+                  height: 52px;
+                  .sa_img;
+                }
               }
-              50%{
-                height: 70%;
+              .imgs:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 85px;
+                height: 85px;
+                border-radius: 50%;
+                transform: scale(0);
+                transition: all 0.5s;
               }
-              100%{
-                height: 100%;
+              p{
+                padding-top: 26px;
+                display: block;
+                font-size: 20px;
+                font-weight: 300;
+                transition: all .3s;
+                text-align: center;
+                color: #fff;
               }
-            }
-            dl:nth-child(3){
-              width: 139px;
-              /* height: 132px; */
-              background-image: url(../image/grh_d3.png);
-              left: 98px;
-              animation: 3s linear 0.5s normal none infinite up;
-              -webkit-animation: 2s linear 1.5s normal none infinite upb;
-            }
-            @keyframes upb{
-              0%{
-                height: 100%;
-              }
-              50%{
-                height: 70%;
-              }
-              100%{
-                height: 100%;
-              }
-            }
-            dl:nth-child(4){
-              width: 77px;
-              /* height: 132px; */
-              background-image: url(../image/grh_d4.png);
-              left: 198px;
-              animation: 3s linear 0.5s normal none infinite up;
-              -webkit-animation: 2s linear 1s normal none infinite upc;
-            }
-            @keyframes upc{
-              0%{
-                height: 100%;
-              }
-              50%{
-                height: 70%;
-              }
-              100%{
-                height: 100%;
-              }
-            }
-            dl:nth-child(5){
-              width: 77px;
-              /* height: 132px; */
-              background-image: url(../image/grh_d5.png);
-              left: 222px;
-              animation: 3s linear 0.5s normal none infinite up;
-              -webkit-animation: 2s linear 0.5s normal none infinite upd;
-            }
-            @keyframes upd{
-              0%{
-                height: 100%;
-              }
-              50%{
-                height: 70%;
-              }
-              100%{
-                height: 100%;
+              .lj{
+                display: block;
+                text-align: center;
+                opacity: 0;
+                transform: translateY(-40px);
+                transition:all 0.5s 0.1s;
+                a{
+                  font-size: 20px;
+                  color: #fff;
+                  background: #8fc31f;
+                  padding: 5px 15px;
+                  border-radius: 20px;
+                }
               }
             }
-          }
-          h1{
-            font-size: 73px;
-          }
-          h2{
-            font-size: 40px;
-            margin: 0;
-            font-weight: normal;
-            letter-spacing: 10px;
+            .last{
+              position: relative;
+              &:hover .gz{
+                opacity: 1;
+              }
+              .img3{
+                width: 78px;
+                height: 64px;
+                .same_img;
+                img{
+                  width: 93px;
+                  height: 93px;
+                  top: 0;
+                  .sa_img;
+                }
+              }
+              p{
+                padding-top: 47px !important;
+              }
+              .gz{
+                opacity: 0;
+                transition: all .5s .1s;
+                position: absolute;
+                top: 50px;
+                text-align: center;
+                width: 100%;
+                z-index: 10;
+              }
+            }
           }
         }
       }
@@ -236,15 +266,18 @@ section{
             }
             .funjian{
               display: inline-block;
-              width: 120px;
-              height: 42px;
-              line-height: 42px;
+              width: 89px;
+              height: 30px;
+              line-height: 33px;
               text-align: center;
-              background: #00a6b1;
+              background:#fff !important;
               color: #fff;
               font-size: 18px;
               float: left;
               margin-left: 27px;
+              /* display: none; */
+              input: unset;
+              border: none;
             }
             .tips{
               position: absolute;
@@ -390,7 +423,7 @@ section{
 //脚部开始
 footer{
   background-color: #404040;
-  padding: 10% 0 3%;
+  //padding: 10% 0 3%;
   color: #fff;
   font-size: 18px;
   overflow: hidden;
@@ -563,7 +596,24 @@ footer{
     }
   }
 }
-
+.a_a{
+  width: 209px;
+  height: 100px;
+  background-color: #fff;
+  display: none;
+  border:1px solid #b8b8b8;
+  ul{
+    li{
+      float: left !important;
+      width: 211px !important;
+      padding: 5px 18px !important;
+      cursor: pointer;
+    }
+    li:nth-child(1){
+      border-bottom: 1px solid #b8b8b8;
+    }
+  }
+}
 
 
 
