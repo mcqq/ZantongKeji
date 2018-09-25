@@ -2,6 +2,7 @@
 body,html{
     width: 100%;
     height: 100%;
+    // overflow: hidden;
 }
 .one{
     width: 100%;
@@ -162,16 +163,17 @@ nav {
 .hovers{
     width:85%;
     margin: 0 auto;
+    position: relative;
+    z-index: 999;
     height:20%;
     ul{
         margin-top: -10px;
     }
     ul li{
-        // position: absolute;
-        width: 25%;
         padding-top: 7px;
         height: 125px;
         float: left;
+        width: 25%;
         padding-top: 10px;
         list-style: none;
         text-align: center;
@@ -190,8 +192,8 @@ nav {
         }
     }
     ul li:hover{
-        transform: scale(1);
-        z-index: 100;
+        transform: scale(1.2);
+        z-index: 999;
         background-color: rgb(167,207,83);
     }
     ul li:hover p{
@@ -230,9 +232,217 @@ nav {
         background-size:70px 60px;    
     }
 }
+
+.two{
+    width: 100%;
+    height:100%;
+    .animate-one{
+        width:90%;
+        height:100%;
+        margin: 0 auto;
+        padding-top:20px;
+        padding-bottom:20px;
+        text-align:center; 
+        position: relative;
+        .rotates{
+            position: absolute;
+            top:22%;
+            left:15%;
+            width:70%;
+            height:65%;
+            background-color: red;
+            background: url("../image/img_2.png") no-repeat center;
+            background-size: 97% 97%;
+            ul li{
+                list-style: none;
+                width:80px;
+                height:80px;
+                border-radius:50%;
+                position: absolute;
+                z-index:100;               
+            }
+            ul li::after{
+                content: " ";
+                display: inline-block;
+                width:130px;
+                height:130px;
+                background-size: 150px 150px;
+                // transform: scale(0.7);
+                position: absolute;
+                left:-26px;
+                top:-26px;
+                animation:gedan 6s linear infinite;
+                background: url("../image/iconbg.png") no-repeat center;
+                background-size:130px 130px;
+            }
+            ul li.xiezuo::after,li.pmo::after{
+                left:-20px;
+                top:-20px;
+                
+            }
+           @-webkit-keyframes gedan {
+			form{
+				transform:rotate(0deg);
+			}to{
+				transform:rotate(360deg)
+			}	 
+		}
+            .it{
+                background: url("../image/title_1.png") no-repeat center;
+                background-size:75% 50%;
+                background-color: rgb(167,211,175);
+                left:155px;
+                top:35px;
+            }
+            .keji{
+                background: url("../image/title_3.png") no-repeat center;
+                background-size:75% 50%;
+                background-color: rgb(1,162,234);
+                left:35px;
+                top:220px;
+            }
+            .xiezuo{
+                background: url("../image/title_4.png") no-repeat center;
+                background-size:75% 50%;
+                background-color: rgb(254,210,1);
+                width:90px;
+                height:90px;
+                left:200px;
+                top:250px;
+            }
+            .pmo{
+                background: url("../image/title_2.png") no-repeat center;
+                background-size:75% 50%;
+                background-color: rgb(0,166,177);
+                width:90px;
+                height:90px;
+                left:560px;
+                top:60px;
+            }
+            .jiagou{
+                background: url("../image/title_5.png") no-repeat center;
+                background-size:75% 50%;
+                background-color: rgb(160,217,246);
+                left:670px;
+                top:180px;
+            }
+        }
+        .wawa{
+            display: inline-block;
+            width:323px;
+            height: 353px;
+            // background-color: red;
+            background: url("../image/img_1.png") no-repeat center;
+            background-size:323px 353px;
+            position: absolute;
+            top:230px;
+            left:450px;
+        }
+    }
+}
+
+.there{
+    width:100%;
+    height: 100%;
+    background-color: rgb(0,166,177);
+    text-align: center;
+    position: relative;
+    .texts{
+        position: absolute;
+        top:10px;
+        left:40%;
+    }
+    h1,h3{
+        color:white;
+    }
+    .there_bottom{
+        width:70%;
+        height:70%;
+        position: absolute;
+        top:130px;
+        left:15%;
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    .right_yun{
+        display: inline-block;
+        width: 160px;
+        height: 65px;
+        background: url("../image/cloud1.png") no-repeat center;
+        background-size: 100% 100%;
+        position: absolute;
+        right:180px;
+        top:45px;
+        animation:rights 3s linear infinite;
+    }
+    .left_yun{
+        display: inline-block;
+        width: 160px;
+        height: 65px;
+        background: url("../image/cloud2.png") no-repeat center;
+        background-size: 100% 100%;
+        position: absolute;
+        left:180px;
+        bottom:45px;
+        animation:lefts 3s linear infinite;
+    }
+     @-webkit-keyframes rights{
+        0%{
+             right:180px;
+         }
+         50%{
+             right:230px;
+         }
+         100%{
+             right:180px;
+         }
+     }
+
+     @-webkit-keyframes lefts{
+        0%{
+             left:180px;
+         }
+         50%{
+             left:230px;
+         }
+         100%{
+             left:180px;
+         }
+     }
+}
+
+.four{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(248,248,284);
+    .four_text{
+        position: absolute;
+        top: 10px;
+        left:45%;
+        text-align: center;
+       h1{
+           color:rgb(19,156,166);
+       }
+    }
+    .four_bottom{
+        width:68%;
+        height:75%;
+        position: absolute;
+        top:130px;
+        left:15%;
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+}
+
 .footer{
     width:100%;
-    height:613px;
+    height:100%;
     background-color: #404040;
     color: #fff;
     font-size: 18px;
@@ -359,8 +569,9 @@ nav {
     }
     .banquan{
         margin-top:50px;
-        position: relative;
-        left:330px;
+        // position: relative;
+        // left:330px;
+        float: left;
         color:#139ca6;
         a{
             color:white;
