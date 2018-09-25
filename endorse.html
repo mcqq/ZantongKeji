@@ -18,9 +18,15 @@
         </div>
         <div class="nav">
             <ul>
+<<<<<<< HEAD
                 <li><a href="index.html">首页</a></li>
                 <li class="product">
                     <a href="index2.html">产品</a>
+=======
+                <li><a href="">首页</a></li>
+                <li class="product">
+                    <a href="">产品</a>
+>>>>>>> 15bcd972b7552d1cfbebb8912e7a890992444da5
                     <div class="sub_box">
                         <dl>
                             <dd>
@@ -61,12 +67,21 @@
                             </dd>
                         </dl>
                     </div>
+<<<<<<< HEAD
                 </li>
                 <li><a href="endorse.html">服务支持</a></li>
                 <li><a href="ztzx.html">赞同资讯</a></li>
                 <li><a href="rczp.html">人才招聘</a></li>
                 <li class="about">
                     <a href="TXL_About Agree.html">关于赞同</a>
+=======
+            </li>
+                <li><a href="">服务支持</a></li>
+                <li><a href="">赞同资讯</a></li>
+                <li><a href="">人才招聘</a></li>
+                <li class="about">
+                    <a href="">关于赞同</a>
+>>>>>>> 15bcd972b7552d1cfbebb8912e7a890992444da5
                     <div class="sub_box">
                         <dl>
                             <dd class="only">
@@ -98,7 +113,11 @@
                             </dd>
                         </dl>
                     </div>
+<<<<<<< HEAD
                 </li>
+=======
+            </li>
+>>>>>>> 15bcd972b7552d1cfbebb8912e7a890992444da5
             </ul>
         </div>
         <div class="lianxi">
@@ -106,6 +125,10 @@
         </div>
     </div>
 </header>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15bcd972b7552d1cfbebb8912e7a890992444da5
    <div class="header">
         <div class="box">
             <div class="table">
@@ -132,11 +155,23 @@
                 <h2>感谢您提出的宝贵意见！</h2>
                 <dl>
                     <dt>
-                        <div class="dahezi">
-                            <a href="#" class="dianjia">产品类型</a>
+                        <div class="dahezi" id="wo">
+                            <a href="javascript:;" class="dianjia">产品类型</a>
+                            <div class="a_a a-s">
+                                <ul>
+                                    <li>产品类型A</li>
+                                    <li>产品类型A</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="dahezi">
-                            <a href="#" class="dianjia">问题类型</a>
+                        <div class="dahezi" id="woa">
+                            <a href="javascript:;" class="dianjia">问题类型</a>
+                            <div class="a_a a_ab">
+                                <ul>
+                                    <li>问题类型A</li>
+                                    <li>问题类型A</li>
+                                </ul>
+                            </div>
                         </div>
                     </dt>
                     <dt>
@@ -145,7 +180,8 @@
                     <dt>
                         <div class="abo">
                             <input type="text">
-                            <a href="#" class="funjian">上传附件</a>
+
+                            <input type="file" class="funjian">
                             <div class="tips">
                                 注：您可以直接上传已编辑好的文档，请选择正确的路径后上传。
                                 <br>
@@ -245,6 +281,29 @@
 
    </footer>
    <!-- 脚部结束 -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $('#wo').click(function(){
+            $('.a-s').toggle();
+            $('a-s ul li').val().html();
+        })
+        $('#woa').click(function(){
+            $('.a_ab').toggle();
+        })
+
+
+        $("header li").on("mouseover",function () {
+            $(this).children("a").css("border-bottom","2px solid #00a6b1")
+            $(this).find(".sub_box").fadeIn();
+            $("header").css("border-bottom","1px solid #00a6b1");
+        })
+        $("header li").on("mouseleave",function () {
+            $(this).children("a").css("border-bottom","none");
+            $(this).find(".sub_box").fadeOut();
+            $("header").css("border-bottom","none");
+        })
+
+    </script>
 </body>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/daohang.js"></script>

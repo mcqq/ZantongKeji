@@ -48,7 +48,113 @@ body{
             color: #fff;
         }
     }
-//company introduction
+    //map
+    .TXL_map{
+        width: 100%;
+        background: url(../image/TXL_about_mapbg.jpg) no-repeat center top;
+        background-size: cover;
+        .TXL_sub{
+            position: relative;
+            width: 948px;
+            height: 770px;
+            margin: 0 auto;
+            transform: scale(0.8);
+           background: url(../image/TXL_about_map.png) no-repeat 0 0;
+            dl{
+                position: absolute;
+                opacity: 1;
+                transform: translateY(0px);
+                transition: all ease 1s;
+                &:hover{
+                    z-index: 10;
+                    dt{
+                        &:before{
+                            width: 30px;
+                            height: 30px;
+                            margin-left: -15px;
+                            margin-top: -15px;
+                        }
+                        &:after{
+                            border-left-width: 18px;
+                            border-right-width: 18px;
+                            border-top-width: 45px;
+                            top: 28px;
+                            left: -5px;
+                        }
+                    }
+                    dd{
+                        display: block;
+
+                    }
+                }
+                dt{
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    position: relative;
+                    background-color: #e5004f;
+                    text-indent: -999em;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        background-color: #fff;
+                        width: 16px;
+                        height: 16px;
+                        left: 50%;
+                        margin-left: -8px;
+                        margin-top: -8px;
+                        top: 50%;
+                        border-radius: 50%;
+                    }
+                    &:after{
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-top: 25px solid #e5004f;
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        content: '';
+                        top: 21px;
+                        left: 3px;
+                    }
+                }
+                dd{
+                    position: absolute;
+                    left: 78px;
+                    bottom: 0;
+                    background-color: #00b5b6;
+                    padding: 10px;
+                    width: 255px;
+                    display: none;
+                    &:before{
+                        border-top: 20px solid transparent;
+                        border-bottom: 10px solid transparent;
+                        border-right: 35px solid #00b5b6;
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        content: '';
+                        bottom: 25px;
+                        left: -35px;
+                    }
+                    h1{
+                        font-size: 24px;
+                        color: #faee00;
+                        margin: 0;
+                        padding-bottom: 10px;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 16px;
+                        span{
+                            color: #faee00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //company introduction
     .TXL_introduction{
         background-color: #f7f8f8;
         padding: 60px 0;
@@ -258,6 +364,124 @@ body{
             }
         }
     }
+    //
+    .TXL_about_group{
+        padding-bottom: 114px;
+        .TXL_about_title{
+            padding-top: 75px;
+            padding-bottom: 20px;
+            color: #00a6b1;
+            font-size: 50px;
+            text-align: center;
+        }
+        .TXL_auto{
+            width: 1200px;
+            margin: 0 auto;
+            .TXL_singlePage{
+                text-align: justify;
+                word-wrap: break-word;
+                word-break: normal;
+                line-height: 1.8;
+            }
+            .TXL_web_link{
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 103px;
+                span{
+                    display: inline-block;
+                    border-radius: 50px;
+                    border: 1px solid #00a6b1;
+                    padding-left: 70px;
+                    line-height: 76px;
+                    font-size: 30px;
+                    padding-right: 135px;
+                    color: #00a6b1;
+                    position: relative;
+                    &:before{
+                        background: url(../image/TXL_web_search.png) no-repeat;
+                        width: 49px;
+                        height: 49px;
+                        right: 63px;
+                        top: 13px;
+                        position: absolute;
+                        content: '';
+                    }
+                }
+            }
+
+        }
+        .TXL_map{
+                background: url(../image/TXL_map_big.jpg) no-repeat center top;
+               height: 700px;
+            .TXL_auto{
+                position: relative;
+                width: 1200px;
+                margin: 0 auto;
+                //TXL_icon_location.png
+                .TXL_location{
+                    position: absolute;
+                    left: 563px;
+                    top: -60px;
+                    background: url(../image/TXL_icon_location.png) no-repeat;
+                    width: 155px;
+                    height: 250px;
+                    font-size: 38px;
+                    color: #faee00;
+                    text-align: center;
+                    box-sizing: border-box;
+                    padding-top: 30px;
+                    cursor: pointer;
+                    animation: mapicon 1s ease-in 0.5s infinite;
+                }
+                .TXL_address{
+                    left: 744px;
+                    font-size: 23px;
+                    color: #000;
+                    position: absolute;
+                    width: 218px;
+                }
+            }
+        }
+        .TXL_list{
+            .TXL_about_title{
+                padding-top: 0;
+                margin-top: -70px;
+                font-size: 50px;
+            }
+            .TXL_auto{
+                width: 1200px;
+                margin: 0 auto;
+            }
+            tr{
+                td{
+                    border-bottom: 1px solid #999;
+                    padding: 20px 0;
+                    font-size: 18px;
+                    text-align: center;
+                    color: #595757;
+                }
+            }
+            tr:first-child{
+                td{
+                    border-bottom: 1px solid #999;
+                    padding: 20px 0;
+                    font-size: 25px;
+                    text-align: center;
+                    color: #595757;
+                    color: #00a6b1;
+                    font-size:25px;
+                    font-weight: bold;
+                    &:nth-child(1){
+                        width: 212px;
+                    }
+                    &:nth-child(3) {
+                        width: 256px;
+                    }
+                }
+            }
+        }
+    }
+    //footer
     .footer{
         width:100%;
         height:613px;

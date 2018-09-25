@@ -129,7 +129,7 @@
             </div>
             <div class="img">
                 <div class="search" id="search" style="display: none;"></div>
-                <img src="image/01_mcq.jpg" alt="">
+                <img src="image/01_mcq.jpg" alt="" style="width:100%;" >
             </div>
             <div class="detail">
                 <a href="/job/index_40.aspx" class="cur">社会招聘</a>
@@ -210,11 +210,108 @@
     <!--主题四-->
     <div class="one_t">
         <div class="about_title">福利待遇</div>
-        <ul>
+        <ul id="nus">
+            <li>
+                <figure>
+                    <img src="image/b1_mcq.png" title="">
+                </figure>
+                <span>5天工作制</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p2_mcq.png" title="">
+                </figure>
+                <span>五金一险</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p3_mcq.png" title="">
+                </figure>
+                <span>健康体检</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p4_mcq.png" title="">
+                </figure>
+                <span>带薪年假年终奖</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p5_mcq.png" title="">
+                </figure>
+                <span>人事MM随时谈心</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p6_mcq.png" title="">
+                </figure>
+                <span>入职周年惊喜</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p7_mcq.png" title="">
+                </figure>
+                <span>生日礼物</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p8_mcq.png" title="">
+                </figure>
+                <span>其他</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p9_mcq.png" title="">
+                </figure>
+                <span>年节礼品</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p10_mcq.png" title="">
+                </figure>
+                <span>下午茶</span>
+            </li>
+            <li>
+                <figure>
+                    <img src="image/p11_mcq.png" title="">
+                </figure>
+                <span>部门活动</span>
+            </li><li>
+            <figure>
+                <img src="image/p12_mcq.png" title="">
+            </figure>
+            <span>丰富多彩的文化活动</span>
+        </li>
+
 
         </ul>
     </div>
 </body>
 </html>
+<script type="text/template1" id="template1">
+    <li>
+        <figure>
+            <img src="<%= hid %>" title="">
+        </figure>
+        <span>"<%= hids %>"</span>
+    </li>
+</script>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
 <script src="js/rczp.js"></script>
+<script>
+    (function() {
+        var str = $('#template1').html();
+        var op = _.template(str);
+        $.get('json/mcq1.json',function(data) {
+           console.log(1)
+            var obj = typeof data == 'object' ? data : eval('(' + data + ')');
+            var list = obj.data;
+            _.each(list, function(item) {
+                var stra = op(item);
+                alert(1)
+                $('.nus').append($(stra));
+            })
+        })
+    })();
+</script>

@@ -15,150 +15,200 @@ h2,
 h3 {
   font-weight: normal;
 }
-.header {
-  height: 897px;
-  background: url(../image/grh_bjt.jpg) no-repeat center center;
-  background-size: cover;
-}
-.header .box {
-  height: 100%;
-  margin: 0 auto;
-}
-.header .box .table {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-.header .box .table .table_els {
-  display: table-cell;
-  vertical-align: middle;
-}
-.header .box .table .table_els .txt {
-  color: #fff;
+.same_img {
   position: relative;
-  width: 826px;
+  display: block;
   margin: 0 auto;
-  padding-top: 215px;
+  line-height: 104px;
+  text-align: center;
+  transition: all 0.5s;
 }
-.header .box .table .table_els .txt .xiaosi {
+.sa_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  z-index: 10;
+}
+header {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  font-size: 18px;
+}
+header .header_box {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .header_box .logo a {
+  float: left;
+  background: url(../image/zyx_logo.png) no-repeat center center;
+  width: 167px;
+  height: 62px;
+}
+header .header_box .lianxi {
+  line-height: 60px;
+  float: right;
+  color: #fff;
+}
+header .header_box .nav {
+  float: left;
+  overflow: hidden;
+  margin-left: 421px;
+}
+header .header_box .nav li {
+  float: left;
+  padding: 0 28px;
+}
+header .header_box .nav li > a {
+  display: block;
+  position: relative;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+}
+header .header_box .nav li > a:before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: -28px;
+  width: 1px;
+  height: 22px;
+  background-color: #fff;
+}
+header .header_box .nav li .sub_box {
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 63px;
+  background: rgba(0, 0, 0, 0.35);
+}
+header .header_box .nav li .sub_box dl {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 348px;
+}
+header .header_box .nav li .sub_box dl .only {
+  margin-left: 12.5%;
+}
+header .header_box .nav li .sub_box dl dd {
+  float: left;
+  padding-top: 75px;
+  width: 25%;
+  height: 235px;
+}
+header .header_box .nav li .sub_box dl dd:hover .imgs {
+  box-shadow: 0 0 10px 50px rgba(255, 255, 255, 0) inset;
+}
+header .header_box .nav li .sub_box dl dd:hover .imgs:before {
+  transform: scale(1);
+  background-color: #acd146;
+}
+header .header_box .nav li .sub_box dl dd:hover .lj {
+  opacity: 1!important;
+  transform: translateY(50px) !important;
+}
+header .header_box .nav li .sub_box dl dd .imgs {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff inset;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  line-height: 104px;
+  text-align: center;
+  transition: all 0.5s;
+}
+header .header_box .nav li .sub_box dl dd .imgs img {
+  top: 16px;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  z-index: 10;
+}
+header .header_box .nav li .sub_box dl dd .imgs:before {
+  content: '';
   position: absolute;
   top: 0;
-  left: 345px;
-  height: 326px;
-  background: url(../image/grh_go.png) no-repeat right bottom;
-  width: 360px;
-}
-.header .box .table .table_els .txt .xiaosi dl {
-  position: absolute;
-  bottom: 24px;
-  text-indent: -999em;
-  background-repeat: no-repeat;
-  background-position: 0 top;
-  height: 100%;
-}
-.header .box .table .table_els .txt .xiaosi dl:nth-child(1) {
-  width: 77px;
-  /* height: 132px; */
-  background-image: url(../image/grh_d1.png);
   left: 0;
-  animation: 3s linear 0.5s normal none infinite up;
-  -webkit-animation: 2s linear 0.5s normal none infinite up;
+  display: block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.5s;
 }
-@keyframes up {
-  0% {
-    height: 100%;
-  }
-  50% {
-    height: 70%;
-  }
-  100% {
-    height: 100%;
-  }
+header .header_box .nav li .sub_box dl dd p {
+  padding-top: 26px;
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.3s;
+  text-align: center;
+  color: #fff;
 }
-.header .box .table .table_els .txt .xiaosi dl:nth-child(2) {
-  width: 77px;
-  /* height: 132px; */
-  background-image: url(../image/grh_d2.png);
-  left: 83px;
-  animation: 2s linear 1s normal none infinite up;
-  -webkit-animation: 2s linear 1s normal none infinite upa;
+header .header_box .nav li .sub_box dl dd .lj {
+  display: block;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.5s 0.1s;
 }
-@keyframes upa {
-  0% {
-    height: 100%;
-  }
-  50% {
-    height: 70%;
-  }
-  100% {
-    height: 100%;
-  }
+header .header_box .nav li .sub_box dl dd .lj a {
+  font-size: 20px;
+  color: #fff;
+  background: #8fc31f;
+  padding: 5px 15px;
+  border-radius: 20px;
 }
-.header .box .table .table_els .txt .xiaosi dl:nth-child(3) {
-  width: 139px;
-  /* height: 132px; */
-  background-image: url(../image/grh_d3.png);
-  left: 98px;
-  animation: 3s linear 0.5s normal none infinite up;
-  -webkit-animation: 2s linear 1.5s normal none infinite upb;
+header .header_box .nav li .sub_box dl .last {
+  position: relative;
 }
-@keyframes upb {
-  0% {
-    height: 100%;
-  }
-  50% {
-    height: 70%;
-  }
-  100% {
-    height: 100%;
-  }
+header .header_box .nav li .sub_box dl .last:hover .gz {
+  opacity: 1;
 }
-.header .box .table .table_els .txt .xiaosi dl:nth-child(4) {
-  width: 77px;
-  /* height: 132px; */
-  background-image: url(../image/grh_d4.png);
-  left: 198px;
-  animation: 3s linear 0.5s normal none infinite up;
-  -webkit-animation: 2s linear 1s normal none infinite upc;
+header .header_box .nav li .sub_box dl .last .img3 {
+  width: 78px;
+  height: 64px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  line-height: 104px;
+  text-align: center;
+  transition: all 0.5s;
 }
-@keyframes upc {
-  0% {
-    height: 100%;
-  }
-  50% {
-    height: 70%;
-  }
-  100% {
-    height: 100%;
-  }
+header .header_box .nav li .sub_box dl .last .img3 img {
+  width: 93px;
+  height: 93px;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  z-index: 10;
 }
-.header .box .table .table_els .txt .xiaosi dl:nth-child(5) {
-  width: 77px;
-  /* height: 132px; */
-  background-image: url(../image/grh_d5.png);
-  left: 222px;
-  animation: 3s linear 0.5s normal none infinite up;
-  -webkit-animation: 2s linear 0.5s normal none infinite upd;
+header .header_box .nav li .sub_box dl .last p {
+  padding-top: 47px !important;
 }
-@keyframes upd {
-  0% {
-    height: 100%;
-  }
-  50% {
-    height: 70%;
-  }
-  100% {
-    height: 100%;
-  }
-}
-.header .box .table .table_els .txt h1 {
-  font-size: 73px;
-}
-.header .box .table .table_els .txt h2 {
-  font-size: 40px;
-  margin: 0;
-  font-weight: normal;
-  letter-spacing: 10px;
+header .header_box .nav li .sub_box dl .last .gz {
+  opacity: 0;
+  transition: all 0.5s 0.1s;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
 }
 section {
   background-color: #f7f8f8;
@@ -233,15 +283,18 @@ section .nav form dl dt:nth-child(3) .abo input {
 }
 section .nav form dl dt:nth-child(3) .abo .funjian {
   display: inline-block;
-  width: 120px;
-  height: 42px;
-  line-height: 42px;
+  width: 89px;
+  height: 30px;
+  line-height: 33px;
   text-align: center;
-  background: #00a6b1;
+  background: #fff !important;
   color: #fff;
   font-size: 18px;
   float: left;
   margin-left: 27px;
+  /* display: none; */
+  input: unset;
+  border: none;
 }
 section .nav form dl dt:nth-child(3) .abo .tips {
   position: absolute;
@@ -373,7 +426,6 @@ section .nav form ol input {
 }
 footer {
   background-color: #404040;
-  padding: 10% 0 3%;
   color: #fff;
   font-size: 18px;
   overflow: hidden;
@@ -529,5 +581,21 @@ footer .foo .foo_c span {
 }
 footer .foo .foo_c span a {
   color: #fff;
+}
+.a_a {
+  width: 209px;
+  height: 100px;
+  background-color: #fff;
+  display: none;
+  border: 1px solid #b8b8b8;
+}
+.a_a ul li {
+  float: left !important;
+  width: 211px !important;
+  padding: 5px 18px !important;
+  cursor: pointer;
+}
+.a_a ul li:nth-child(1) {
+  border-bottom: 1px solid #b8b8b8;
 }
 /*# sourceMappingURL=endorse-to.css.map */
