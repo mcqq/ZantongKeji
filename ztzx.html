@@ -7,6 +7,60 @@
 	<link rel="stylesheet" href="css/ztzx.css">
 </head>
 <body>
+	<!--头部-->
+	<header>
+		<div class="header_box">
+			<div class="logo">
+				<a href=""></a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">产品</a></li>
+					<li><a href="">服务支持</a></li>
+					<li><a href="">赞同资讯</a></li>
+					<li><a href="">人才招聘</a></li>
+					<li class="about">
+						<a href="">关于赞同</a>
+						<div class="sub_box">
+							<dl>
+								<dd>
+									<div class="imgs">
+										<a href=""><img src="image/zyx_about1.png" alt=""></a>
+									</div>
+									<p>关于赞同</p>
+									<div class="lj">
+										<a href="">了解更多</a>
+									</div>
+								</dd>
+								<dd>
+									<div class="imgs">
+										<a href=""><img src="image/zyx_about2.png" alt=""></a>
+									</div>
+									<p>成功案例</p>
+									<div class="lj">
+										<a href="">了解更多</a>
+									</div>
+								</dd>
+								<dd>
+									<div class="img3">
+										<a href=""><img src="image/zyx_icon4.png" alt=""></a>
+									</div>
+									<p>关注我们</p>
+									<div class="gz">
+										<img src="image/zyx_code.jpg" alt="">
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="lianxi">
+				联系我们：010-64731133
+			</div>
+		</div>
+	</header>
 	<!--广告图-->
 	<div class="banner"></div>
 	<!--咨询部分-->
@@ -124,6 +178,7 @@
 					this.json();
 					this.bindEvent();
 					this.back();
+					this.nav();
                 },
 				banner:function () {
                     // 广告图的高
@@ -170,6 +225,16 @@
                     });
 					$(".back").on("click",function () {
                         $("html, body").animate({scrollTop:0},500);
+                    })
+                },
+				nav:function () {
+					$(".about").on("mouseover",function () {
+						$(this).find(".sub_box").fadeIn();
+						$("header").css("border-bottom","1px solid #00a6b1");
+                    })
+                    $(".about").on("mouseleave",function () {
+                        $(this).find(".sub_box").fadeOut();
+                        $("header").css("border-bottom","none");
                     })
                 }
 			}
